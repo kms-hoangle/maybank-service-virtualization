@@ -1,0 +1,251 @@
+{
+  "uuid": "0e1b6ad9-8cc9-4f7b-ac68-b5701be71212",
+  "lastMigration": 32,
+  "name": "Maybank poc v1",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3100,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "3423512d-c2d9-44b0-8da2-5b6dd3563693",
+      "type": "http",
+      "documentation": "MBMCOTPI",
+      "method": "post",
+      "endpoint": "my/rt/mae/inq4/v1/otpgeneration",
+      "responses": [
+        {
+          "uuid": "517c8174-cd4e-4f65-bc6d-600ab0fd374d",
+          "body": "{\n  \"Msg\": {\n    \"MsgHeader\": {\n      \"MsgID\": \"{{body 'Msg.MsgHeader.MsgID' 'default'}}\",\n      \"Ver\": \"01\",\n      \"SvcID\": \"MYRTIMCII0050\",\n      \"TxnCode\": \"MBMCOTPI\",\n      \"Env\": \"S\",\n      \"StatusCode\": \"0000\",\n      \"StatusDesc\": \"Success\",\n      \"E2ETime\": \"0.060\",\n      \"AdditionalStatusCodes\": [\n        {\n          \"HostTxncode\": \"MBMCOTPI\",\n          \"HostTxndesc\": \"otp generation\",\n          \"HostStatusCode\": \"0000\",\n          \"HostStatusDesc\": \"Success\",\n          \"HostProductSystem\": \"CICSSST\",\n          \"TXNTime\": \"0.039\"\n        }\n      ]\n    },\n    \"MsgBody\": {\n      \"BinLength\": \"\",\n      \"Token\": \"\",\n      \"MBB_AccessNum\": \"\",\n      \"MBB_CardNum\": \"\"\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "f8155cef-7db6-4b97-b7ef-2fcc228f07d3",
+      "type": "http",
+      "documentation": "MBMCOTPV",
+      "method": "post",
+      "endpoint": "my/rt/mae/inq4/v1/otpverification",
+      "responses": [
+        {
+          "uuid": "c693bc56-72cc-431a-85d3-2c1f92985da4",
+          "body": "{\n  \"Msg\": {\n    \"MsgHeader\": {\n      \"MsgID\": \"{{body 'Msg.MsgHeader.MsgID' 'default'}}\",\n      \"Ver\": \"01\",\n      \"SvcID\": \"MYRTIMCII0051\",\n      \"TxnCode\": \"MBMCOTPV\",\n      \"Env\": \"S\",\n      \"StatusCode\": \"0000\",\n      \"StatusDesc\": \"Success\",\n      \"E2ETime\": \"0.047\",\n      \"AdditionalStatusCodes\": [\n        {\n          \"HostTxncode\": \"MBMCOTPV\",\n          \"HostTxndesc\": \"otp generation\",\n          \"HostStatusCode\": \"0000\",\n          \"HostStatusDesc\": \"Success\",\n          \"HostProductSystem\": \"CICSSST\",\n          \"TXNTime\": \"0.029\"\n        }\n      ]\n    },\n    \"MsgBody\": {}\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "7b414fb5-7374-4953-b2b4-6db26a4fbf41",
+      "type": "http",
+      "documentation": "MBASMZZZ",
+      "method": "post",
+      "endpoint": "my/mbb/v1/AcctSmry",
+      "responses": [
+        {
+          "uuid": "258001b7-69b4-4d0b-884e-34e7bad9e56e",
+          "body": "{\n  \"Msg\": {\n    \"MsgHdr\": {\n      \"MsgNo\": \"{{body 'Msg.MsgHdr.MsgNo' 'default'}}\",\n      \"Source\": \"RMBP-MY\",\n      \"TxnCode\": \"565657\",\n      \"TxnDt\": \"{{body 'Msg.MsgHdr.TxnDt' 'default'}}\",\n      \"TxnTime\": \"{{body 'Msg.MsgHdr.TxnTime' 'default'}}\",\n      \"SvcName\": \"MBASMZZZ\",\n      \"StatusCode\": \"0\",\n      \"StatusDesc\": \"Success\",\n      \"AddLeginfo\": {\n        \"TxncodeInfo\": [\n          {\n            \"HostTxncode\": \"MBASMSST\",\n            \"HostStatusCode\": \"0000\",\n            \"HostStatusDesc\": \"Success\"\n          }\n        ]\n      }\n    },\n    \"MsgBody\": {\n      \"PAN\": \"160000007001340503\",\n      \"TermId\": \"40010001\",\n      \"RetRefNum\": \"000000000000000000000000\",\n      \"NoOfOccr\": 4,\n      \"AcctRec\": [\n        {\n          \"AcctNO\": \"5623660104710000000\",\n          \"FDCertNO\": \"00000000000000\",\n          \"AcctStatusCode\": \"00\",\n          \"AcctInfo\": {\n            \"CurCode\": \"MYR\",\n            \"AcctOccr\": \"\",\n            \"AcctName\": [\n              \"\"\n            ],\n            \"ColtralOccr\": \"\",\n            \"ColtralDescr\": \"\",\n            \"BalOccr\": 6,\n            \"AcctBal\": [\n              {\n                \"BalType\": \"01\",\n                \"BalTypeVal\": \"+000000002176622\"\n              },\n              {\n                \"BalType\": \"02\",\n                \"BalTypeVal\": \"+000000002176622\"\n              },\n              {\n                \"BalType\": \"03\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"04\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"05\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"68\",\n                \"BalTypeVal\": \"+000000000000000\"\n              }\n            ]\n          }\n        },\n        {\n          \"AcctNO\": \"0140126281080000000\",\n          \"FDCertNO\": \"00000000000000\",\n          \"AcctStatusCode\": \"00\",\n          \"AcctInfo\": {\n            \"CurCode\": \"MYR\",\n            \"AcctOccr\": \"\",\n            \"AcctName\": [\n              \"\"\n            ],\n            \"ColtralOccr\": \"\",\n            \"ColtralDescr\": \"\",\n            \"BalOccr\": 6,\n            \"AcctBal\": [\n              {\n                \"BalType\": \"01\",\n                \"BalTypeVal\": \"+000000000010000\"\n              },\n              {\n                \"BalType\": \"02\",\n                \"BalTypeVal\": \"+000000000010000\"\n              },\n              {\n                \"BalType\": \"03\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"04\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"05\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"68\",\n                \"BalTypeVal\": \"+000000000000000\"\n              }\n            ]\n          }\n        },\n        {\n          \"AcctNO\": \"1147120254010000000\",\n          \"FDCertNO\": \"00000000000000\",\n          \"AcctStatusCode\": \"00\",\n          \"AcctInfo\": {\n            \"CurCode\": \"MYR\",\n            \"AcctOccr\": \"\",\n            \"AcctName\": [\n              \"\"\n            ],\n            \"ColtralOccr\": \"\",\n            \"ColtralDescr\": \"\",\n            \"BalOccr\": 6,\n            \"AcctBal\": [\n              {\n                \"BalType\": \"01\",\n                \"BalTypeVal\": \"+000000200000000\"\n              },\n              {\n                \"BalType\": \"02\",\n                \"BalTypeVal\": \"+000000200000000\"\n              },\n              {\n                \"BalType\": \"03\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"04\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"05\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"98\",\n                \"BalTypeVal\": \"+000000000000001\"\n              }\n            ]\n          }\n        },\n        {\n          \"AcctNO\": \"1647170256080000000\",\n          \"FDCertNO\": \"00000000000000\",\n          \"AcctStatusCode\": \"00\",\n          \"AcctInfo\": {\n            \"CurCode\": \"MYR\",\n            \"AcctOccr\": \"\",\n            \"AcctName\": [\n              \"\"\n            ],\n            \"ColtralOccr\": \"\",\n            \"ColtralDescr\": \"\",\n            \"BalOccr\": 6,\n            \"AcctBal\": [\n              {\n                \"BalType\": \"01\",\n                \"BalTypeVal\": \"+000000200000000\"\n              },\n              {\n                \"BalType\": \"02\",\n                \"BalTypeVal\": \"+000000200000000\"\n              },\n              {\n                \"BalType\": \"03\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"04\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"05\",\n                \"BalTypeVal\": \"+000000000000000\"\n              },\n              {\n                \"BalType\": \"98\",\n                \"BalTypeVal\": \"+000000000000002\"\n              }\n            ]\n          }\n        }\n      ]\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "8fe497e7-5b89-4e1e-925b-04dc499ed988",
+      "type": "http",
+      "documentation": "MBLGNCUS",
+      "method": "post",
+      "endpoint": "my/mbb/v1/logon",
+      "responses": [
+        {
+          "uuid": "e5fa630f-f291-44b4-b5e6-37b9fd51a11e",
+          "body": "{\n  \"Msg\": {\n    \"MsgHdr\": {\n      \"IFX\": null,\n      \"MsgNo\": \"{{body 'Msg.MsgHdr.MsgNo' 'default'}}\",\n      \"Source\": \"RMBP-MY\",\n      \"SvcName\": \"MBLGNCUS\",\n      \"TxnCode\": \"565657\",\n      \"TxnDt\": \"{{body 'Msg.MsgHdr.TxnDt' 'default'}}\",\n      \"TxnTime\": \"{{body 'Msg.MsgHdr.TxnTime' 'default'}}\",\n      \"EnvRegion\": \"S\",\n      \"TxnType\": \"A\",\n      \"StatusCode\": \"0\",\n      \"StatusDesc\": \"Success\",\n      \"AddLeginfo\": {\n        \"TxncodeInfo\": {\n          \"HostTxncode\": \"MBLGNCUS\",\n          \"HostStatusCode\": \"0000\",\n          \"HostStatusDesc\": \"Success\"\n        }\n      }\n    },\n    \"MsgBody\": {\n      \"CustInfo\": {\n        \"BirthDt\": \"\",\n        \"Gender\": \"\",\n        \"RaceCode\": \"\",\n        \"NRICBsnReg\": \"\",\n        \"CustTypFlg\": \"\",\n        \"OldIC\": \"\",\n        \"HouseNO\": \"\",\n        \"OfcNO\": \"\",\n        \"MobNO\": \"\",\n        \"Addr1\": \"\",\n        \"Addr2\": \"\",\n        \"Addr3\": \"\",\n        \"Addr4\": \"\",\n        \"Addr5\": \"\",\n        \"EmailAddr\": \"\",\n        \"OverseasFlg\": \"\",\n        \"GCIF\": \"\",\n        \"ChrgeFlg\": \"\",\n        \"AccessCardTyp\": \"\",\n        \"CustName\": \"\"\n      },\n      \"NoOfOccr\": 2,\n      \"AcctDtl\": [\n        {\n          \"AcctTyp\": \"E\",\n          \"AcctCode\": \"13\",\n          \"CurCode\": \"USD\",\n          \"AcctNO\": \"7140120064490000000\",\n          \"NoOfCert\": \"\",\n          \"AcctStatus\": \"\"\n        },\n        {\n          \"AcctTyp\": \"E\",\n          \"AcctCode\": \"13\",\n          \"CurCode\": \"AUD\",\n          \"AcctNO\": \"7140120059370000000\",\n          \"NoOfCert\": \"\",\n          \"AcctStatus\": \"\"\n        }\n      ]\n    }\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "0ae88705-1f9b-4ad2-b06d-3c5bcb8c66bd",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "vi/customer/summary",
+      "responses": [
+        {
+          "uuid": "727774c2-1093-4733-9e67-89b0bcd9aea0",
+          "body": "{\n  \"MsgTypeId\": null,\n  \"PAN\": null,\n  \"RetRefNum\": null,\n  \"TermId\": null,\n  \"SvcCode\": null,\n  \"SubSvcCode\": null,\n  \"NoOfOccr\": \"4\",\n  \"CustInfo\": {\n    \"CustName\": \"AUTO SIT A                              \",\n    \"PAN\": \"160000007001340503\",\n    \"GCIF\": \"000699941\",\n    \"BirthDt\": \"29081996\",\n    \"Gender\": \"F\",\n    \"RaceCode\": \"0001\",\n    \"NRICBsnReg\": \"960829142611\",\n    \"CustTypFlg\": \"01\",\n    \"OldIC\": \"                    \",\n    \"HouseNO\": \"\",\n    \"OfcNO\": \"0131111111\",\n    \"MobNO\": \"\",\n    \"Addr1\": \"                                        \",\n    \"Addr2\": \"                                        \",\n    \"Addr3\": \"                                        \",\n    \"Addr4\": \"                                        \",\n    \"Addr5\": \"                                      00\",\n    \"EmailAddr\": \"                            \",\n    \"OverseasFlg\": \"00\",\n    \"ChrgeFlg\": \"00\",\n    \"AccessCardTyp\": \"00\",\n    \"Custypeflg\": \"0\",\n    \"InstId\": \"     \",\n    \"CustSeg\": \"  \"\n  },\n  \"AcctRec\": null,\n  \"AcctDtl\": [\n    {\n      \"AcctTyp\": \"D\",\n      \"AcctCode\": \"05\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"5623660104710000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"Current Account-i\"\n    },\n    {\n      \"AcctTyp\": \"D\",\n      \"AcctCode\": \"CC\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"0140126281080000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"MAE Wallet\"\n    },\n    {\n      \"AcctTyp\": \"S\",\n      \"AcctCode\": \"11\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"1147120254010000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"Kawanku Savings Account\"\n    },\n    {\n      \"AcctTyp\": \"S\",\n      \"AcctCode\": \"13\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"1647170256080000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"Savings Account-i\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "pan",
+              "value": "160000007001340503",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "20811709-24bd-4f7f-b2f9-f6b82c2f78ee",
+          "body": "{\n  \"MsgTypeId\": null,\n  \"PAN\": null,\n  \"RetRefNum\": null,\n  \"TermId\": null,\n  \"SvcCode\": null,\n  \"SubSvcCode\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "3423512d-c2d9-44b0-8da2-5b6dd3563693"
+    },
+    {
+      "type": "route",
+      "uuid": "f8155cef-7db6-4b97-b7ef-2fcc228f07d3"
+    },
+    {
+      "type": "route",
+      "uuid": "7b414fb5-7374-4953-b2b4-6db26a4fbf41"
+    },
+    {
+      "type": "route",
+      "uuid": "8fe497e7-5b89-4e1e-925b-04dc499ed988"
+    },
+    {
+      "type": "route",
+      "uuid": "0ae88705-1f9b-4ad2-b06d-3c5bcb8c66bd"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
