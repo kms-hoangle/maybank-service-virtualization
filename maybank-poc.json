@@ -179,6 +179,35 @@
         }
       ],
       "responseMode": null
+    },
+    {
+      "uuid": "058df860-0467-4c6e-a222-364a4a91d6df",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "banking/v1/customer",
+      "responses": [
+        {
+          "uuid": "06ac9e59-ce3b-437a-a1da-a3420f2514bc",
+          "body": "{\n  \"MsgTypeId\": null,\n  \"PAN\": null,\n  \"RetRefNum\": null,\n  \"TermId\": null,\n  \"SvcCode\": null,\n  \"SubSvcCode\": null,\n  \"NoOfOccr\": \"4\",\n  \"CustInfo\": {\n    \"CustName\": \"AUTO SIT A                              \",\n    \"PAN\": \"160000007001340503\",\n    \"GCIF\": \"000699941\",\n    \"BirthDt\": \"29081996\",\n    \"Gender\": \"F\",\n    \"RaceCode\": \"0001\",\n    \"NRICBsnReg\": \"960829142611\",\n    \"CustTypFlg\": \"01\",\n    \"OldIC\": \"                    \",\n    \"HouseNO\": \"\",\n    \"OfcNO\": \"0131111111\",\n    \"MobNO\": \"\",\n    \"Addr1\": \"                                        \",\n    \"Addr2\": \"                                        \",\n    \"Addr3\": \"                                        \",\n    \"Addr4\": \"                                        \",\n    \"Addr5\": \"                                      00\",\n    \"EmailAddr\": \"                            \",\n    \"OverseasFlg\": \"00\",\n    \"ChrgeFlg\": \"00\",\n    \"AccessCardTyp\": \"00\",\n    \"Custypeflg\": \"0\",\n    \"InstId\": \"     \",\n    \"CustSeg\": \"  \"\n  },\n  \"AcctRec\": null,\n  \"AcctDtl\": [\n    {\n      \"AcctTyp\": \"D\",\n      \"AcctCode\": \"05\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"5623660104710000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"Current Account-i\"\n    },\n    {\n      \"AcctTyp\": \"D\",\n      \"AcctCode\": \"CC\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"0140126281080000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"MAE Wallet\"\n    },\n    {\n      \"AcctTyp\": \"S\",\n      \"AcctCode\": \"11\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"1147120254010000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"Kawanku Savings Account\"\n    },\n    {\n      \"AcctTyp\": \"S\",\n      \"AcctCode\": \"13\",\n      \"CurCode\": \"MYR\",\n      \"AcctNO\": \"1647170256080000000\",\n      \"NoOfCert\": \"\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctName\": \"SavingsAccount-i\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -201,6 +230,10 @@
     {
       "type": "route",
       "uuid": "0ae88705-1f9b-4ad2-b06d-3c5bcb8c66bd"
+    },
+    {
+      "type": "route",
+      "uuid": "058df860-0467-4c6e-a222-364a4a91d6df"
     }
   ],
   "proxyMode": false,
