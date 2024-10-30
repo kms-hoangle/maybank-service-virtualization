@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  kafka:
+    image: mockoon-maybank
+    container_name: mockoon-maybank
+    ports:
+    - "3100:3100"
