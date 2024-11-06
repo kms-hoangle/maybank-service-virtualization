@@ -2,7 +2,7 @@
   "uuid": "0e1b6ad9-8cc9-4f7b-ac68-b5701be71212",
   "lastMigration": 32,
   "name": "Maybank poc v1",
-  "endpointPrefix": "",
+  "endpointPrefix": "virtual-dev",
   "latency": 0,
   "port": 3100,
   "hostname": "",
@@ -218,7 +218,1069 @@
       "responses": [
         {
           "uuid": "84424bb0-b837-4168-bcf6-101b79f8754a",
-          "body": "{\n  \"code\": 200,\n  \"status\": \"Success\",\n  \"nonce\": null,\n  \"appVersion\": \"0.6.6\",\n  \"appStatus\": 1,\n  \"appMessage\": \"Testing Message Notification\",\n  \"maintenance\": false,\n  \"maintenanceTitle\": \"\",\n  \"maintenanceMsg\": \"\",\n  \"campaignInfo\": {\n    \"campaignReady\": false,\n    \"signUpCampaignReady\": false,\n    \"festivalReady\": false,\n    \"donationReady\": false,\n    \"tapTasticReady\": false,\n    \"newCampaignReady\": false,\n    \"newFestivalReady\": false,\n    \"newDonationReady\": false,\n    \"newTapTasticReady\": false,\n    \"soleProp\": false,\n    \"tapTasticType\": \"deepavali\",\n    \"tapTasticDonationReady\": false,\n    \"festiveIconReady\": false,\n    \"mayaHomeReady\": false,\n    \"cepTrackerUrl\": \"https://campaigns-nonprod.maybanksandbox.com/uat/v2/\",\n    \"txnList\": [\n      \"MAECARDAPPLY\",\n      \"M2UGOAL\",\n      \"MAEBOOSTER\",\n      \"QRPUSH\",\n      \"QRPULL\",\n      \"QRP2P\",\n      \"MAYASENDMONEY\",\n      \"MAYARECVMONEY\",\n      \"MAESENDMONEY\",\n      \"MAERECVMONEY\",\n      \"M2UPYMT\",\n      \"M2UPYMT2\",\n      \"M2URELOAD\",\n      \"M2URELOAD2\",\n      \"M2URELOADSPL\",\n      \"MAESPLITBILL\",\n      \"MAESPINWHEEL\",\n      \"MAEKLIA\",\n      \"MAEERLKLIA\",\n      \"M2UHEART\",\n      \"MAEPAYMENTNOTFOUND\",\n      \"M2UJOMPAY\",\n      \"MAEDUITNOW\",\n      \"M2UDUITNOW\",\n      \"MAELOYALTYCARD\",\n      \"MAEONBOARD\",\n      \"QRREGISTER\",\n      \"M2US2UREG\",\n      \"M2UONLINE\",\n      \"M2USAVENRL\",\n      \"M2UASNB\",\n      \"M2USAMALKL\",\n      \"M2UFSAMALKL\",\n      \"M2UFTT\",\n      \"M2UWU\",\n      \"M2UVISA\",\n      \"M2UTH\",\n      \"M2UMOTOR\",\n      \"M2UTRAVEL\",\n      \"M2UEZCASH\",\n      \"M2UFPX\",\n      \"M2UFPXMERCHANT\",\n      \"M2UDPE\",\n      \"QRDUITNOW\",\n      \"M2UZAKAT\",\n      \"MAEWIDGET\",\n      \"MAELOGIN\",\n      \"MAEBAKONG\",\n      \"MAELAUNCH\",\n      \"M2UEFD\",\n      \"MAEMYGROSER\",\n      \"MAYAFESTIVE\",\n      \"MAEATMCONTACLESS\",\n      \"M2UREGTRANSFER\",\n      \"M2UFUNDTRANSFEROWNCARD\",\n      \"M2UFUNDTRANSFEROWNLOAN\",\n      \"MAEWETIX\",\n      \"M2UFUNDTRANSFER3PT\",\n      \"M2UFUNDTRANSFERIBG\",\n      \"MAECATCHTHEBUS\",\n      \"MAEAIRPAZ\",\n      \"M2UZESTI\",\n      \"M2UPREM\",\n      \"M2UEFIXDEP\",\n      \"M2UPLOAN\",\n      \"M2UCC\",\n      \"MAEREFER\",\n      \"M2UFAVE\",\n      \"M2UFUNDTRANSFEROWNCA\",\n      \"M2UFTOPLC\",\n      \"M2UASBIL\",\n      \"M2UEZP\",\n      \"M2UBT\",\n      \"M2UUTRUST\",\n      \"M2UHEARTDO\",\n      \"MAECROSSBORDER\",\n      \"M2UMIGABUY\",\n      \"M2UMIGASEL\",\n      \"MAEHOME2U\",\n      \"M2UWASIAT\",\n      \"MAELCLMRCHNT\",\n      \"MAYAFESTIVEMONEY\",\n      \"M2USAVINGS\",\n      \"M2UPMAI\",\n      \"M2UPREMIUM\",\n      \"M2UKAWANKU\"\n    ],\n    \"dashboardCampaignUrl\": \"https://stp-engage.maybank2u.com.my\",\n    \"onPremiseTrackerUrl\": \"https://livechat-uat.maybank2u.com.my\",\n    \"dashboardCampaignEnabled\": true\n  },\n  \"referralInfo\": {\n    \"campaignReady\": false,\n    \"txnList\": []\n  },\n  \"sslInfo\": {\n    \"sslReady\": true,\n    \"sslCampaignReady\": true,\n    \"sandboxUrl\": \"https://search-staging.maybanksandbox.com/samasamalokal\",\n    \"geolocationUrl\": \"https://staging.api.maybank.com/api/my/retail/partner\",\n    \"dataPowerInfo\": {\n      \"sslPrompter\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/prompter\",\n      \"sslL2Categories\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/categories\",\n      \"sslPromoCategories\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/promocategories\"\n    }\n  },\n  \"specialOccasionData\": [\n    {\n      \"module\": \"SEND_RCV\",\n      \"note\": \"\",\n      \"successMsg\": \"\"\n    }\n  ],\n  \"s2uReady\": true,\n  \"atReady\": true,\n  \"bakongReady\": true,\n  \"homeInfo\": {\n    \"showMayaHome\": true,\n    \"menuTitle\": \"Property\",\n    \"propertyCloudUrl\": \"https://search-staging.maybanksandbox.com\",\n    \"propertyCloudEnabled\": true,\n    \"mayaHomeMasterDataCloudUrl\": null,\n    \"homeServiceFlag\": false,\n    \"homeServiceBannerFlag\": true\n  },\n  \"financialGoal\": {\n    \"showFinancialGoal\": true,\n    \"financialDesc\": \"This service is temporarily unavailable.\"\n  },\n  \"etunai\": {\n    \"campaignReady\": \"0\",\n    \"qrPull\": true,\n    \"qrPush\": true,\n    \"submissionReady\": false\n  },\n  \"zakatService\": {\n    \"showZakatService\": true,\n    \"showZakatOnDemandService\": true\n  },\n  \"gameText\": {\n    \"quickActionTitle\": \"\",\n    \"widgetDescription\": \"Win up to RM64 in cash prizes or vouchers with every transaction!\",\n    \"widgetButtonText\": \"Play Now\",\n    \"menuTitle\": \"Arcade MAE-mory\",\n    \"gameHeaderTitle\": \"Arcade MAE-mory\",\n    \"gameHeaderBgColor\": \"#F1ECB8\",\n    \"gameStatus\": \"ON\"\n  },\n  \"snEnabled\": false,\n  \"btReady\": true,\n  \"ezypayReady\": true,\n  \"fdPlacementReady\": true,\n  \"cardStpReady\": true,\n  \"suppCardStpReady\": true,\n  \"plStpReady\": true,\n  \"sslReady\": false,\n  \"sslCampaignReady\": false,\n  \"rtpReady\": false,\n  \"partnerMerchants\": [\n    {\n      \"title\": null,\n      \"code\": null,\n      \"image\": null,\n      \"moreImage\": null\n    }\n  ],\n  \"applePayProvision\": {\n    \"applePayProvision\": true,\n    \"applePayWidget\": true,\n    \"applePayPrompter\": true,\n    \"applePayCardsDashboard\": true,\n    \"applePayPromotion\": false,\n    \"applePayPromotionID\": 0,\n    \"dashboardWidget\": {\n      \"title\": \"Apple Pay\",\n      \"description\": \"A safe, contactless, easy way to pay.\",\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/applepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": \"Add Card Now\",\n        \"action\": \"APPLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    },\n    \"cardsDashboardWidget\": {\n      \"title\": \"Apple Pay\",\n      \"description\": \"Apple Pay is now ready for Maybank Cardmembers!\",\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/applepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": \"Add Card Now\",\n        \"action\": \"APPLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    }\n  },\n  \"digitalWealthAvailable\": true,\n  \"atmCashoutInfoResponse\": {\n    \"flagEnable\": \"Y\",\n    \"flagMsg\": \"Coming Soon!!!\",\n    \"flagHeaderMsg\": \"ATM Cash-out is not available\",\n    \"appVersion\": null,\n    \"appVersionFlag\": false,\n    \"momentFlag\": false,\n    \"bannerEnable\": true\n  },\n  \"statementPrintingReady\": true,\n  \"analyticsExpiry\": \"0\",\n  \"serverDate\": \"2024-05-31T10:08:12.898\",\n  \"statementCasaPrintingReady\": true,\n  \"crashyImplementation\": true,\n  \"cloudLogs\": true,\n  \"cloudConfig\": 30,\n  \"m2uIdDeletionReady\": true,\n  \"m2uIdDeletionNewHandlingReady\": true,\n  \"cmsUrl\": \"https://maya-dev.maybanksandbox.com/cms-service/dev/api/v1\",\n  \"overseasReady\": true,\n  \"initVersion\": 1122,\n  \"zestIInfoResponse\": {\n    \"zestiFlag\": true,\n    \"m2uPremierFlag\": true,\n    \"activateAccount\": true,\n    \"applyDebitCardFlag\": true,\n    \"activateDebitCardFlag\": true\n  },\n  \"retryCount\": 5,\n  \"retryWait\": 300,\n  \"retry\": true,\n  \"s2uCoolingReady\": true,\n  \"asbStp\": {\n    \"mainApplicantFlag\": true,\n    \"guarantorFlag\": true\n  },\n  \"retryThreshold\": 8001,\n  \"cmsReady\": true,\n  \"ipCheckUrl\": \"https://capi.maybanksandbox.com/ip\",\n  \"casaInfoResponse\": {\n    \"pmaFlag\": true,\n    \"pm1Flag\": true,\n    \"kawanKuFlag\": true,\n    \"savingIFlag\": true,\n    \"g1aFlag\": true,\n    \"yippieFlag\": true,\n    \"yippieIFlag\": true\n  },\n  \"pushReadCallbackUrl\": \"https://dev-capi.maybanksandbox.com/uat/opennotification\",\n  \"purchaseLimitReady\": true,\n  \"cardRenewalReady\": true,\n  \"reprintReceiptReady\": true,\n  \"contactBlacklistingValidation\": true,\n  \"secureSwitchPrompter\": true,\n  \"secureSwitchFlag\": true,\n  \"s2uV4ToastFlag\": true,\n  \"cardUnsettledTxnHistory\": true,\n  \"regionalViewReady\": true,\n  \"overseasMobileNoEnableAppVersion\": true,\n  \"secureSwitchS2UBypass\": true,\n  \"blockCardFlag\": true,\n  \"blockAccountFlag\": true,\n  \"malaysiaPhoneNo\": true,\n  \"s2uV4Flag\": true,\n  \"walletBalanceReady\": true,\n  \"notificationCenterReady\": true,\n  \"notificationCenterExpiry\": 120000,\n  \"enableQrpayLimitChange\": false,\n  \"enableQrpayDailyLimit5k\": true,\n  \"qrAmount\": 1000,\n  \"blockDebitCardFlag\": true,\n  \"s2uEndDateForRmbp\": \"Effective from 01 July 2023, \\r\\nyou can only approve transactions via Secure2u on the MAE app. \\r\\n\\r\\nActivate it now and enjoy a more secure way of approving the transactions on this app. \",\n  \"s2uEnforcementScreen\": \"ON\",\n  \"s2uEnforcementScreenFrequency\": \"10-1000\",\n  \"fetchLatestS2UActivationCard\": true,\n  \"ethicalCardCarbonFlag\": true,\n  \"ethicalCardCarbonOffsetFlag\": true,\n  \"carbonCalculatorUrl\": \"https://staging.api.int.maybank.com/api/my/rt/verrency/v1/estimatekgco2\",\n  \"carbonOffsetCampaignId\": \"64a53e8f1154ea031452326c\",\n  \"maybankHeartFlag\": true,\n  \"ethicalCardPayeeCode\": \"7731\",\n  \"ethicalCardInterestFlag\": true,\n  \"ekycZolozFlag\": true,\n  \"s2uEkycRegFlag\": true,\n  \"maeJuniorFlag\": false,\n  \"maeJuniorCampaign\": false,\n  \"rpp2bAbWidget\": true,\n  \"s2uBypassCoolingFlag\": true,\n  \"wrongPwdPNFlag\": true,\n  \"googlePayConfig\": {\n    \"googlePayProvision\": true,\n    \"dashboardWidget\": {\n      \"title\": null,\n      \"description\": null,\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/googlepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": null,\n        \"action\": \"GOOGLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    }\n  },\n  \"multiDashboard\": {\n    \"bannerStart\": \"2023-08-15\",\n    \"bannerEnd\": \"2023-09-20\",\n    \"bannerFrequency\": 5,\n    \"multiDashboardReady\": true,\n    \"preferredDashboard\": \"A\"\n  },\n  \"s2uV2FallbackSrvcs\": null,\n  \"s2uV2PayBillFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2ReloadFlags\": {\n    \"open\": true,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2ThirdPartyFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2DuitNowProxyFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2DuitNowIBFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"mbpnsV2Ready\": false,\n  \"enableReceiverIdValidation\": false,\n  \"multipleAccess\": {\n    \"multipleAccessReady\": 2,\n    \"maxIdLimit\": 5\n  },\n  \"dynamicApiUrl\": \"https://sit-maya.maybank.com.my\",\n  \"maeFunction\": {\n    \"tabung\": {\n      \"tabungEnabled\": true,\n      \"tabungDesc\": \"\",\n      \"tabungTitle\": \"Be Right Back!\"\n    },\n    \"dashboard\": {\n      \"casaEnabled\": true,\n      \"cardEnabled\": true,\n      \"loanEnabled\": true,\n      \"fdEnabled\": true,\n      \"wealthEnabled\": true,\n      \"casaDesc\": \"\",\n      \"cardDesc\": \"\",\n      \"loanDesc\": \"\",\n      \"fdDesc\": \"\",\n      \"wealthDesc\": \"\",\n      \"casaTitle\": \"Be Right Back!\",\n      \"cardTitle\": \"Be Right Back!\",\n      \"loanTitle\": \"Be Right Back!\",\n      \"fdTitle\": \"Be Right Back!\",\n      \"wealthTitle\": \"Be Right Back!\"\n    },\n    \"payBills\": {\n      \"payBillsEnabled\": true,\n      \"payBillsDesc\": \"\",\n      \"subPayBillsEnabled\": false,\n      \"subJomPayEnabled\": false\n    },\n    \"mobileReload\": {\n      \"mobileReloadEnabled\": true,\n      \"mobileReloadDesc\": \"\"\n    },\n    \"sendRequest\": {\n      \"sendRequestEnabled\": true,\n      \"sendRequestDesc\": \"\"\n    },\n    \"transfer\": {\n      \"transferEnabled\": true,\n      \"transferDesc\": \"\",\n      \"subBankTransferEnabled\": false\n    },\n    \"trnxHis\": {\n      \"trnxHisEnabled\": true,\n      \"trnxHisDesc\": \"\",\n      \"trnxHisTitle\": \"Be Right Back!\"\n    },\n    \"ticket\": {\n      \"wetixEnabled\": false,\n      \"erlEnabled\": true,\n      \"airpazEnabled\": true,\n      \"travelEnabled\": true,\n      \"busEnabled\": true,\n      \"wetixDesc\": \"Sorry, our Movies & Leisure services are temporarily unavailable. Please try again later.\",\n      \"erlDesc\": \"\",\n      \"airpazDesc\": \"\",\n      \"travelDesc\": \"\",\n      \"busDesc\": \"\"\n    },\n    \"ccBalanceTrn\": {\n      \"ccBalanceTrnEnabled\": false,\n      \"ccBalanceTrnDesc\": \"\"\n    },\n    \"payToCard\": {\n      \"payToCardEnabled\": true,\n      \"payToCardDesc\": \"\"\n    },\n    \"payLoan\": {\n      \"payLoanEnabled\": true,\n      \"payLoanDesc\": \"\"\n    },\n    \"scanPay\": {\n      \"scanPayEnabled\": true,\n      \"scanPayDesc\": \"\"\n    },\n    \"splitBills\": {\n      \"splitBillsEnabled\": true,\n      \"splitBillsDesc\": \"\"\n    },\n    \"maeJunior\": {\n      \"maeJuniorEnabled\": true,\n      \"maeJuniorCampaign\": true,\n      \"maeJuniorDesc\": \"\",\n      \"maeJuniorTitle\": \"Be Right Back!\"\n    },\n    \"fixedDeposit\": {\n      \"enabled\": true,\n      \"bauVersionEnabled\": true,\n      \"description\": \"\",\n      \"title\": \"Be Right Back!\"\n    },\n    \"loyalty\": {\n      \"loyaltyEnabled\": true,\n      \"loyaltyTitle\": \"\",\n      \"loyaltyDescription\": \"\"\n    },\n    \"saved\": {\n      \"savedEnabled\": false,\n      \"savedTitle\": \"Be Right Back!\",\n      \"savedDescription\": \"Our Saved services are temporarily unavailable. Rest assured, we're working to resolve this as soon as possible. Thank you for your patience and understanding.\"\n    },\n    \"maybankEzq\": {\n      \"maybankEzqEnabled\": false,\n      \"maybankEzqDesc\": \"Sorry, our Maybank EzyQ services are temporarily unavailable. Please try again later.\"\n    }\n  },\n  \"enableExpensesCache\": true,\n  \"abcEnable\": true,\n  \"abcEndpoint\": \"https://growthbook-api-dev.maybanksandbox.com\",\n  \"abcSdk\": \"sdk-cAC7AQGd1GAEedY\",\n  \"abcScope\": \"123456\",\n  \"abcTimeout\": null,\n  \"homeServiceFlag\": false,\n  \"payCardLimit\": 999999,\n  \"carTabungFlag\": true,\n  \"boldFontEnabledCheck\": true,\n  \"enableCrashReporting\": true,\n  \"clearInactiveCookiesFlag\": true,\n  \"cookieExpiryTimerInMins\": 15,\n  \"appShield\": {\n    \"appShieldReady\": true,\n    \"appShieldTimeout\": 30000,\n    \"appShieldSync\": true\n  },\n  \"disabledPNSCall\": false,\n  \"s2UActivationEnabled\": true,\n  \"forceS2uReady\": true,\n  \"dynamicURLEnable\": true\n}",
+          "body": "{\n  \"code\": 200,\n  \"status\": \"Success\",\n  \"id\" : \"{{queryParam 'id'}}\",\n  \"nonce\": null,\n  \"appVersion\": \"0.6.6\",\n  \"appStatus\": 1,\n  \"appMessage\": \"Testing Message Notification\",\n  \"maintenance\": false,\n  \"maintenanceTitle\": \"\",\n  \"maintenanceMsg\": \"\",\n  \"campaignInfo\": {\n    \"campaignReady\": false,\n    \"signUpCampaignReady\": false,\n    \"festivalReady\": false,\n    \"donationReady\": false,\n    \"tapTasticReady\": false,\n    \"newCampaignReady\": false,\n    \"newFestivalReady\": false,\n    \"newDonationReady\": false,\n    \"newTapTasticReady\": false,\n    \"soleProp\": false,\n    \"tapTasticType\": \"deepavali\",\n    \"tapTasticDonationReady\": false,\n    \"festiveIconReady\": false,\n    \"mayaHomeReady\": false,\n    \"cepTrackerUrl\": \"https://campaigns-nonprod.maybanksandbox.com/uat/v2/\",\n    \"txnList\": [\n      \"MAECARDAPPLY\",\n      \"M2UGOAL\",\n      \"MAEBOOSTER\",\n      \"QRPUSH\",\n      \"QRPULL\",\n      \"QRP2P\",\n      \"MAYASENDMONEY\",\n      \"MAYARECVMONEY\",\n      \"MAESENDMONEY\",\n      \"MAERECVMONEY\",\n      \"M2UPYMT\",\n      \"M2UPYMT2\",\n      \"M2URELOAD\",\n      \"M2URELOAD2\",\n      \"M2URELOADSPL\",\n      \"MAESPLITBILL\",\n      \"MAESPINWHEEL\",\n      \"MAEKLIA\",\n      \"MAEERLKLIA\",\n      \"M2UHEART\",\n      \"MAEPAYMENTNOTFOUND\",\n      \"M2UJOMPAY\",\n      \"MAEDUITNOW\",\n      \"M2UDUITNOW\",\n      \"MAELOYALTYCARD\",\n      \"MAEONBOARD\",\n      \"QRREGISTER\",\n      \"M2US2UREG\",\n      \"M2UONLINE\",\n      \"M2USAVENRL\",\n      \"M2UASNB\",\n      \"M2USAMALKL\",\n      \"M2UFSAMALKL\",\n      \"M2UFTT\",\n      \"M2UWU\",\n      \"M2UVISA\",\n      \"M2UTH\",\n      \"M2UMOTOR\",\n      \"M2UTRAVEL\",\n      \"M2UEZCASH\",\n      \"M2UFPX\",\n      \"M2UFPXMERCHANT\",\n      \"M2UDPE\",\n      \"QRDUITNOW\",\n      \"M2UZAKAT\",\n      \"MAEWIDGET\",\n      \"MAELOGIN\",\n      \"MAEBAKONG\",\n      \"MAELAUNCH\",\n      \"M2UEFD\",\n      \"MAEMYGROSER\",\n      \"MAYAFESTIVE\",\n      \"MAEATMCONTACLESS\",\n      \"M2UREGTRANSFER\",\n      \"M2UFUNDTRANSFEROWNCARD\",\n      \"M2UFUNDTRANSFEROWNLOAN\",\n      \"MAEWETIX\",\n      \"M2UFUNDTRANSFER3PT\",\n      \"M2UFUNDTRANSFERIBG\",\n      \"MAECATCHTHEBUS\",\n      \"MAEAIRPAZ\",\n      \"M2UZESTI\",\n      \"M2UPREM\",\n      \"M2UEFIXDEP\",\n      \"M2UPLOAN\",\n      \"M2UCC\",\n      \"MAEREFER\",\n      \"M2UFAVE\",\n      \"M2UFUNDTRANSFEROWNCA\",\n      \"M2UFTOPLC\",\n      \"M2UASBIL\",\n      \"M2UEZP\",\n      \"M2UBT\",\n      \"M2UUTRUST\",\n      \"M2UHEARTDO\",\n      \"MAECROSSBORDER\",\n      \"M2UMIGABUY\",\n      \"M2UMIGASEL\",\n      \"MAEHOME2U\",\n      \"M2UWASIAT\",\n      \"MAELCLMRCHNT\",\n      \"MAYAFESTIVEMONEY\",\n      \"M2USAVINGS\",\n      \"M2UPMAI\",\n      \"M2UPREMIUM\",\n      \"M2UKAWANKU\"\n    ],\n    \"dashboardCampaignUrl\": \"https://stp-engage.maybank2u.com.my\",\n    \"onPremiseTrackerUrl\": \"https://livechat-uat.maybank2u.com.my\",\n    \"dashboardCampaignEnabled\": true\n  },\n  \"referralInfo\": {\n    \"campaignReady\": false,\n    \"txnList\": []\n  },\n  \"sslInfo\": {\n    \"sslReady\": true,\n    \"sslCampaignReady\": true,\n    \"sandboxUrl\": \"https://search-staging.maybanksandbox.com/samasamalokal\",\n    \"geolocationUrl\": \"https://staging.api.maybank.com/api/my/retail/partner\",\n    \"dataPowerInfo\": {\n      \"sslPrompter\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/prompter\",\n      \"sslL2Categories\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/categories\",\n      \"sslPromoCategories\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/promocategories\"\n    }\n  },\n  \"specialOccasionData\": [\n    {\n      \"module\": \"SEND_RCV\",\n      \"note\": \"\",\n      \"successMsg\": \"\"\n    }\n  ],\n  \"s2uReady\": true,\n  \"atReady\": true,\n  \"bakongReady\": true,\n  \"homeInfo\": {\n    \"showMayaHome\": true,\n    \"menuTitle\": \"Property\",\n    \"propertyCloudUrl\": \"https://search-staging.maybanksandbox.com\",\n    \"propertyCloudEnabled\": true,\n    \"mayaHomeMasterDataCloudUrl\": null,\n    \"homeServiceFlag\": false,\n    \"homeServiceBannerFlag\": true\n  },\n  \"financialGoal\": {\n    \"showFinancialGoal\": true,\n    \"financialDesc\": \"This service is temporarily unavailable.\"\n  },\n  \"etunai\": {\n    \"campaignReady\": \"0\",\n    \"qrPull\": true,\n    \"qrPush\": true,\n    \"submissionReady\": false\n  },\n  \"zakatService\": {\n    \"showZakatService\": true,\n    \"showZakatOnDemandService\": true\n  },\n  \"gameText\": {\n    \"quickActionTitle\": \"\",\n    \"widgetDescription\": \"Win up to RM64 in cash prizes or vouchers with every transaction!\",\n    \"widgetButtonText\": \"Play Now\",\n    \"menuTitle\": \"Arcade MAE-mory\",\n    \"gameHeaderTitle\": \"Arcade MAE-mory\",\n    \"gameHeaderBgColor\": \"#F1ECB8\",\n    \"gameStatus\": \"ON\"\n  },\n  \"snEnabled\": false,\n  \"btReady\": true,\n  \"ezypayReady\": true,\n  \"fdPlacementReady\": true,\n  \"cardStpReady\": true,\n  \"suppCardStpReady\": true,\n  \"plStpReady\": true,\n  \"sslReady\": false,\n  \"sslCampaignReady\": false,\n  \"rtpReady\": false,\n  \"partnerMerchants\": [\n    {\n      \"title\": null,\n      \"code\": null,\n      \"image\": null,\n      \"moreImage\": null\n    }\n  ],\n  \"applePayProvision\": {\n    \"applePayProvision\": true,\n    \"applePayWidget\": true,\n    \"applePayPrompter\": true,\n    \"applePayCardsDashboard\": true,\n    \"applePayPromotion\": false,\n    \"applePayPromotionID\": 0,\n    \"dashboardWidget\": {\n      \"title\": \"Apple Pay\",\n      \"description\": \"A safe, contactless, easy way to pay.\",\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/applepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": \"Add Card Now\",\n        \"action\": \"APPLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    },\n    \"cardsDashboardWidget\": {\n      \"title\": \"Apple Pay\",\n      \"description\": \"Apple Pay is now ready for Maybank Cardmembers!\",\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/applepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": \"Add Card Now\",\n        \"action\": \"APPLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    }\n  },\n  \"digitalWealthAvailable\": true,\n  \"atmCashoutInfoResponse\": {\n    \"flagEnable\": \"Y\",\n    \"flagMsg\": \"Coming Soon!!!\",\n    \"flagHeaderMsg\": \"ATM Cash-out is not available\",\n    \"appVersion\": null,\n    \"appVersionFlag\": false,\n    \"momentFlag\": false,\n    \"bannerEnable\": true\n  },\n  \"statementPrintingReady\": true,\n  \"analyticsExpiry\": \"0\",\n  \"serverDate\": \"2024-05-31T10:08:12.898\",\n  \"statementCasaPrintingReady\": true,\n  \"crashyImplementation\": true,\n  \"cloudLogs\": true,\n  \"cloudConfig\": 30,\n  \"m2uIdDeletionReady\": true,\n  \"m2uIdDeletionNewHandlingReady\": true,\n  \"cmsUrl\": \"https://maya-dev.maybanksandbox.com/cms-service/dev/api/v1\",\n  \"overseasReady\": true,\n  \"initVersion\": 1122,\n  \"zestIInfoResponse\": {\n    \"zestiFlag\": true,\n    \"m2uPremierFlag\": true,\n    \"activateAccount\": true,\n    \"applyDebitCardFlag\": true,\n    \"activateDebitCardFlag\": true\n  },\n  \"retryCount\": 5,\n  \"retryWait\": 300,\n  \"retry\": true,\n  \"s2uCoolingReady\": true,\n  \"asbStp\": {\n    \"mainApplicantFlag\": true,\n    \"guarantorFlag\": true\n  },\n  \"retryThreshold\": 8001,\n  \"cmsReady\": true,\n  \"ipCheckUrl\": \"https://capi.maybanksandbox.com/ip\",\n  \"casaInfoResponse\": {\n    \"pmaFlag\": true,\n    \"pm1Flag\": true,\n    \"kawanKuFlag\": true,\n    \"savingIFlag\": true,\n    \"g1aFlag\": true,\n    \"yippieFlag\": true,\n    \"yippieIFlag\": true\n  },\n  \"pushReadCallbackUrl\": \"https://dev-capi.maybanksandbox.com/uat/opennotification\",\n  \"purchaseLimitReady\": true,\n  \"cardRenewalReady\": true,\n  \"reprintReceiptReady\": true,\n  \"contactBlacklistingValidation\": true,\n  \"secureSwitchPrompter\": true,\n  \"secureSwitchFlag\": true,\n  \"s2uV4ToastFlag\": true,\n  \"cardUnsettledTxnHistory\": true,\n  \"regionalViewReady\": true,\n  \"overseasMobileNoEnableAppVersion\": true,\n  \"secureSwitchS2UBypass\": true,\n  \"blockCardFlag\": true,\n  \"blockAccountFlag\": true,\n  \"malaysiaPhoneNo\": true,\n  \"s2uV4Flag\": true,\n  \"walletBalanceReady\": true,\n  \"notificationCenterReady\": true,\n  \"notificationCenterExpiry\": 120000,\n  \"enableQrpayLimitChange\": false,\n  \"enableQrpayDailyLimit5k\": true,\n  \"qrAmount\": 1000,\n  \"blockDebitCardFlag\": true,\n  \"s2uEndDateForRmbp\": \"Effective from 01 July 2023, \\r\\nyou can only approve transactions via Secure2u on the MAE app. \\r\\n\\r\\nActivate it now and enjoy a more secure way of approving the transactions on this app. \",\n  \"s2uEnforcementScreen\": \"ON\",\n  \"s2uEnforcementScreenFrequency\": \"10-1000\",\n  \"fetchLatestS2UActivationCard\": true,\n  \"ethicalCardCarbonFlag\": true,\n  \"ethicalCardCarbonOffsetFlag\": true,\n  \"carbonCalculatorUrl\": \"https://staging.api.int.maybank.com/api/my/rt/verrency/v1/estimatekgco2\",\n  \"carbonOffsetCampaignId\": \"64a53e8f1154ea031452326c\",\n  \"maybankHeartFlag\": true,\n  \"ethicalCardPayeeCode\": \"7731\",\n  \"ethicalCardInterestFlag\": true,\n  \"ekycZolozFlag\": true,\n  \"s2uEkycRegFlag\": true,\n  \"maeJuniorFlag\": false,\n  \"maeJuniorCampaign\": false,\n  \"rpp2bAbWidget\": true,\n  \"s2uBypassCoolingFlag\": true,\n  \"wrongPwdPNFlag\": true,\n  \"googlePayConfig\": {\n    \"googlePayProvision\": true,\n    \"dashboardWidget\": {\n      \"title\": null,\n      \"description\": null,\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/googlepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": null,\n        \"action\": \"GOOGLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    }\n  },\n  \"multiDashboard\": {\n    \"bannerStart\": \"2023-08-15\",\n    \"bannerEnd\": \"2023-09-20\",\n    \"bannerFrequency\": 5,\n    \"multiDashboardReady\": true,\n    \"preferredDashboard\": \"A\"\n  },\n  \"s2uV2FallbackSrvcs\": null,\n  \"s2uV2PayBillFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2ReloadFlags\": {\n    \"open\": true,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2ThirdPartyFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2DuitNowProxyFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2DuitNowIBFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"mbpnsV2Ready\": false,\n  \"enableReceiverIdValidation\": false,\n  \"multipleAccess\": {\n    \"multipleAccessReady\": 2,\n    \"maxIdLimit\": 5\n  },\n  \"dynamicApiUrl\": \"https://sit-maya.maybank.com.my\",\n  \"maeFunction\": {\n    \"tabung\": {\n      \"tabungEnabled\": true,\n      \"tabungDesc\": \"\",\n      \"tabungTitle\": \"Be Right Back!\"\n    },\n    \"dashboard\": {\n      \"casaEnabled\": true,\n      \"cardEnabled\": true,\n      \"loanEnabled\": true,\n      \"fdEnabled\": true,\n      \"wealthEnabled\": true,\n      \"casaDesc\": \"\",\n      \"cardDesc\": \"\",\n      \"loanDesc\": \"\",\n      \"fdDesc\": \"\",\n      \"wealthDesc\": \"\",\n      \"casaTitle\": \"Be Right Back!\",\n      \"cardTitle\": \"Be Right Back!\",\n      \"loanTitle\": \"Be Right Back!\",\n      \"fdTitle\": \"Be Right Back!\",\n      \"wealthTitle\": \"Be Right Back!\"\n    },\n    \"payBills\": {\n      \"payBillsEnabled\": true,\n      \"payBillsDesc\": \"\",\n      \"subPayBillsEnabled\": false,\n      \"subJomPayEnabled\": false\n    },\n    \"mobileReload\": {\n      \"mobileReloadEnabled\": true,\n      \"mobileReloadDesc\": \"\"\n    },\n    \"sendRequest\": {\n      \"sendRequestEnabled\": true,\n      \"sendRequestDesc\": \"\"\n    },\n    \"transfer\": {\n      \"transferEnabled\": true,\n      \"transferDesc\": \"\",\n      \"subBankTransferEnabled\": false\n    },\n    \"trnxHis\": {\n      \"trnxHisEnabled\": true,\n      \"trnxHisDesc\": \"\",\n      \"trnxHisTitle\": \"Be Right Back!\"\n    },\n    \"ticket\": {\n      \"wetixEnabled\": false,\n      \"erlEnabled\": true,\n      \"airpazEnabled\": true,\n      \"travelEnabled\": true,\n      \"busEnabled\": true,\n      \"wetixDesc\": \"Sorry, our Movies & Leisure services are temporarily unavailable. Please try again later.\",\n      \"erlDesc\": \"\",\n      \"airpazDesc\": \"\",\n      \"travelDesc\": \"\",\n      \"busDesc\": \"\"\n    },\n    \"ccBalanceTrn\": {\n      \"ccBalanceTrnEnabled\": false,\n      \"ccBalanceTrnDesc\": \"\"\n    },\n    \"payToCard\": {\n      \"payToCardEnabled\": true,\n      \"payToCardDesc\": \"\"\n    },\n    \"payLoan\": {\n      \"payLoanEnabled\": true,\n      \"payLoanDesc\": \"\"\n    },\n    \"scanPay\": {\n      \"scanPayEnabled\": true,\n      \"scanPayDesc\": \"\"\n    },\n    \"splitBills\": {\n      \"splitBillsEnabled\": true,\n      \"splitBillsDesc\": \"\"\n    },\n    \"maeJunior\": {\n      \"maeJuniorEnabled\": true,\n      \"maeJuniorCampaign\": true,\n      \"maeJuniorDesc\": \"\",\n      \"maeJuniorTitle\": \"Be Right Back!\"\n    },\n    \"fixedDeposit\": {\n      \"enabled\": true,\n      \"bauVersionEnabled\": true,\n      \"description\": \"\",\n      \"title\": \"Be Right Back!\"\n    },\n    \"loyalty\": {\n      \"loyaltyEnabled\": true,\n      \"loyaltyTitle\": \"\",\n      \"loyaltyDescription\": \"\"\n    },\n    \"saved\": {\n      \"savedEnabled\": false,\n      \"savedTitle\": \"Be Right Back!\",\n      \"savedDescription\": \"Our Saved services are temporarily unavailable. Rest assured, we're working to resolve this as soon as possible. Thank you for your patience and understanding.\"\n    },\n    \"maybankEzq\": {\n      \"maybankEzqEnabled\": false,\n      \"maybankEzqDesc\": \"Sorry, our Maybank EzyQ services are temporarily unavailable. Please try again later.\"\n    }\n  },\n  \"enableExpensesCache\": true,\n  \"abcEnable\": true,\n  \"abcEndpoint\": \"https://growthbook-api-dev.maybanksandbox.com\",\n  \"abcSdk\": \"sdk-cAC7AQGd1GAEedY\",\n  \"abcScope\": \"123456\",\n  \"abcTimeout\": null,\n  \"homeServiceFlag\": false,\n  \"payCardLimit\": 999999,\n  \"carTabungFlag\": true,\n  \"boldFontEnabledCheck\": true,\n  \"enableCrashReporting\": true,\n  \"clearInactiveCookiesFlag\": true,\n  \"cookieExpiryTimerInMins\": 15,\n  \"appShield\": {\n    \"appShieldReady\": true,\n    \"appShieldTimeout\": 30000,\n    \"appShieldSync\": true\n  },\n  \"disabledPNSCall\": false,\n  \"s2UActivationEnabled\": true,\n  \"forceS2uReady\": true,\n  \"dynamicURLEnable\": true\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "55a12569-5b37-4b18-a0a7-f9dd88f580a4",
+          "body": "{\n  \"code\": 200,\n  \"status\": \"Success\",\n  \"nonce\": null,\n  \"appVersion\": \"0.6.6\",\n  \"appStatus\": 1,\n  \"appMessage\": \"Testing Message Notification\",\n  \"maintenance\": false,\n  \"maintenanceTitle\": \"\",\n  \"maintenanceMsg\": \"\",\n  \"campaignInfo\": {\n    \"campaignReady\": false,\n    \"signUpCampaignReady\": false,\n    \"festivalReady\": false,\n    \"donationReady\": false,\n    \"tapTasticReady\": false,\n    \"newCampaignReady\": false,\n    \"newFestivalReady\": false,\n    \"newDonationReady\": false,\n    \"newTapTasticReady\": false,\n    \"soleProp\": false,\n    \"tapTasticType\": \"deepavali\",\n    \"tapTasticDonationReady\": false,\n    \"festiveIconReady\": false,\n    \"mayaHomeReady\": false,\n    \"cepTrackerUrl\": \"https://campaigns-nonprod.maybanksandbox.com/uat/v2/\",\n    \"txnList\": [\n      \"MAECARDAPPLY\",\n      \"M2UGOAL\",\n      \"MAEBOOSTER\",\n      \"QRPUSH\",\n      \"QRPULL\",\n      \"QRP2P\",\n      \"MAYASENDMONEY\",\n      \"MAYARECVMONEY\",\n      \"MAESENDMONEY\",\n      \"MAERECVMONEY\",\n      \"M2UPYMT\",\n      \"M2UPYMT2\",\n      \"M2URELOAD\",\n      \"M2URELOAD2\",\n      \"M2URELOADSPL\",\n      \"MAESPLITBILL\",\n      \"MAESPINWHEEL\",\n      \"MAEKLIA\",\n      \"MAEERLKLIA\",\n      \"M2UHEART\",\n      \"MAEPAYMENTNOTFOUND\",\n      \"M2UJOMPAY\",\n      \"MAEDUITNOW\",\n      \"M2UDUITNOW\",\n      \"MAELOYALTYCARD\",\n      \"MAEONBOARD\",\n      \"QRREGISTER\",\n      \"M2US2UREG\",\n      \"M2UONLINE\",\n      \"M2USAVENRL\",\n      \"M2UASNB\",\n      \"M2USAMALKL\",\n      \"M2UFSAMALKL\",\n      \"M2UFTT\",\n      \"M2UWU\",\n      \"M2UVISA\",\n      \"M2UTH\",\n      \"M2UMOTOR\",\n      \"M2UTRAVEL\",\n      \"M2UEZCASH\",\n      \"M2UFPX\",\n      \"M2UFPXMERCHANT\",\n      \"M2UDPE\",\n      \"QRDUITNOW\",\n      \"M2UZAKAT\",\n      \"MAEWIDGET\",\n      \"MAELOGIN\",\n      \"MAEBAKONG\",\n      \"MAELAUNCH\",\n      \"M2UEFD\",\n      \"MAEMYGROSER\",\n      \"MAYAFESTIVE\",\n      \"MAEATMCONTACLESS\",\n      \"M2UREGTRANSFER\",\n      \"M2UFUNDTRANSFEROWNCARD\",\n      \"M2UFUNDTRANSFEROWNLOAN\",\n      \"MAEWETIX\",\n      \"M2UFUNDTRANSFER3PT\",\n      \"M2UFUNDTRANSFERIBG\",\n      \"MAECATCHTHEBUS\",\n      \"MAEAIRPAZ\",\n      \"M2UZESTI\",\n      \"M2UPREM\",\n      \"M2UEFIXDEP\",\n      \"M2UPLOAN\",\n      \"M2UCC\",\n      \"MAEREFER\",\n      \"M2UFAVE\",\n      \"M2UFUNDTRANSFEROWNCA\",\n      \"M2UFTOPLC\",\n      \"M2UASBIL\",\n      \"M2UEZP\",\n      \"M2UBT\",\n      \"M2UUTRUST\",\n      \"M2UHEARTDO\",\n      \"MAECROSSBORDER\",\n      \"M2UMIGABUY\",\n      \"M2UMIGASEL\",\n      \"MAEHOME2U\",\n      \"M2UWASIAT\",\n      \"MAELCLMRCHNT\",\n      \"MAYAFESTIVEMONEY\",\n      \"M2USAVINGS\",\n      \"M2UPMAI\",\n      \"M2UPREMIUM\",\n      \"M2UKAWANKU\"\n    ],\n    \"dashboardCampaignUrl\": \"https://stp-engage.maybank2u.com.my\",\n    \"onPremiseTrackerUrl\": \"https://livechat-uat.maybank2u.com.my\",\n    \"dashboardCampaignEnabled\": true\n  },\n  \"referralInfo\": {\n    \"campaignReady\": false,\n    \"txnList\": []\n  },\n  \"sslInfo\": {\n    \"sslReady\": true,\n    \"sslCampaignReady\": true,\n    \"sandboxUrl\": \"https://search-staging.maybanksandbox.com/samasamalokal\",\n    \"geolocationUrl\": \"https://staging.api.maybank.com/api/my/retail/partner\",\n    \"dataPowerInfo\": {\n      \"sslPrompter\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/prompter\",\n      \"sslL2Categories\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/categories\",\n      \"sslPromoCategories\": \"https://staging.api.maybank.com/api/my/retail/mae/v1/qrms/promocategories\"\n    }\n  },\n  \"specialOccasionData\": [\n    {\n      \"module\": \"SEND_RCV\",\n      \"note\": \"\",\n      \"successMsg\": \"\"\n    }\n  ],\n  \"s2uReady\": true,\n  \"atReady\": true,\n  \"bakongReady\": true,\n  \"homeInfo\": {\n    \"showMayaHome\": true,\n    \"menuTitle\": \"Property\",\n    \"propertyCloudUrl\": \"https://search-staging.maybanksandbox.com\",\n    \"propertyCloudEnabled\": true,\n    \"mayaHomeMasterDataCloudUrl\": null,\n    \"homeServiceFlag\": false,\n    \"homeServiceBannerFlag\": true\n  },\n  \"financialGoal\": {\n    \"showFinancialGoal\": true,\n    \"financialDesc\": \"This service is temporarily unavailable.\"\n  },\n  \"etunai\": {\n    \"campaignReady\": \"0\",\n    \"qrPull\": true,\n    \"qrPush\": true,\n    \"submissionReady\": false\n  },\n  \"zakatService\": {\n    \"showZakatService\": true,\n    \"showZakatOnDemandService\": true\n  },\n  \"gameText\": {\n    \"quickActionTitle\": \"\",\n    \"widgetDescription\": \"Win up to RM64 in cash prizes or vouchers with every transaction!\",\n    \"widgetButtonText\": \"Play Now\",\n    \"menuTitle\": \"Arcade MAE-mory\",\n    \"gameHeaderTitle\": \"Arcade MAE-mory\",\n    \"gameHeaderBgColor\": \"#F1ECB8\",\n    \"gameStatus\": \"ON\"\n  },\n  \"snEnabled\": false,\n  \"btReady\": true,\n  \"ezypayReady\": true,\n  \"fdPlacementReady\": true,\n  \"cardStpReady\": true,\n  \"suppCardStpReady\": true,\n  \"plStpReady\": true,\n  \"sslReady\": false,\n  \"sslCampaignReady\": false,\n  \"rtpReady\": false,\n  \"partnerMerchants\": [\n    {\n      \"title\": null,\n      \"code\": null,\n      \"image\": null,\n      \"moreImage\": null\n    }\n  ],\n  \"applePayProvision\": {\n    \"applePayProvision\": true,\n    \"applePayWidget\": true,\n    \"applePayPrompter\": true,\n    \"applePayCardsDashboard\": true,\n    \"applePayPromotion\": false,\n    \"applePayPromotionID\": 0,\n    \"dashboardWidget\": {\n      \"title\": \"Apple Pay\",\n      \"description\": \"A safe, contactless, easy way to pay.\",\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/applepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": \"Add Card Now\",\n        \"action\": \"APPLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    },\n    \"cardsDashboardWidget\": {\n      \"title\": \"Apple Pay\",\n      \"description\": \"Apple Pay is now ready for Maybank Cardmembers!\",\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/applepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": \"Add Card Now\",\n        \"action\": \"APPLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    }\n  },\n  \"digitalWealthAvailable\": true,\n  \"atmCashoutInfoResponse\": {\n    \"flagEnable\": \"Y\",\n    \"flagMsg\": \"Coming Soon!!!\",\n    \"flagHeaderMsg\": \"ATM Cash-out is not available\",\n    \"appVersion\": null,\n    \"appVersionFlag\": false,\n    \"momentFlag\": false,\n    \"bannerEnable\": true\n  },\n  \"statementPrintingReady\": true,\n  \"analyticsExpiry\": \"0\",\n  \"serverDate\": \"2024-05-31T11:57:38.432\",\n  \"statementCasaPrintingReady\": true,\n  \"crashyImplementation\": true,\n  \"cloudLogs\": true,\n  \"cloudConfig\": 30,\n  \"m2uIdDeletionReady\": true,\n  \"m2uIdDeletionNewHandlingReady\": true,\n  \"cmsUrl\": \"https://maya-dev.maybanksandbox.com/cms-service/dev/api/v1\",\n  \"overseasReady\": true,\n  \"initVersion\": 1122,\n  \"zestIInfoResponse\": {\n    \"zestiFlag\": true,\n    \"m2uPremierFlag\": true,\n    \"activateAccount\": true,\n    \"applyDebitCardFlag\": true,\n    \"activateDebitCardFlag\": true\n  },\n  \"retryCount\": 5,\n  \"retryWait\": 300,\n  \"retry\": true,\n  \"s2uCoolingReady\": true,\n  \"asbStp\": {\n    \"mainApplicantFlag\": true,\n    \"guarantorFlag\": true\n  },\n  \"retryThreshold\": 8001,\n  \"cmsReady\": true,\n  \"ipCheckUrl\": \"https://capi.maybanksandbox.com/ip\",\n  \"casaInfoResponse\": {\n    \"pmaFlag\": true,\n    \"pm1Flag\": true,\n    \"kawanKuFlag\": true,\n    \"savingIFlag\": true,\n    \"g1aFlag\": true,\n    \"yippieFlag\": true,\n    \"yippieIFlag\": true\n  },\n  \"pushReadCallbackUrl\": \"https://dev-capi.maybanksandbox.com/uat/opennotification\",\n  \"purchaseLimitReady\": true,\n  \"cardRenewalReady\": true,\n  \"reprintReceiptReady\": true,\n  \"contactBlacklistingValidation\": true,\n  \"secureSwitchPrompter\": true,\n  \"secureSwitchFlag\": true,\n  \"s2uV4ToastFlag\": true,\n  \"cardUnsettledTxnHistory\": true,\n  \"regionalViewReady\": true,\n  \"overseasMobileNoEnableAppVersion\": true,\n  \"secureSwitchS2UBypass\": true,\n  \"blockCardFlag\": true,\n  \"blockAccountFlag\": true,\n  \"malaysiaPhoneNo\": true,\n  \"s2uV4Flag\": true,\n  \"walletBalanceReady\": true,\n  \"notificationCenterReady\": true,\n  \"notificationCenterExpiry\": 120000,\n  \"enableQrpayLimitChange\": false,\n  \"enableQrpayDailyLimit5k\": true,\n  \"qrAmount\": 1000,\n  \"blockDebitCardFlag\": true,\n  \"s2uEndDateForRmbp\": \"Effective from 01 July 2023, \\r\\nyou can only approve transactions via Secure2u on the MAE app. \\r\\n\\r\\nActivate it now and enjoy a more secure way of approving the transactions on this app. \",\n  \"s2uEnforcementScreen\": \"ON\",\n  \"s2uEnforcementScreenFrequency\": \"10-1000\",\n  \"fetchLatestS2UActivationCard\": true,\n  \"ethicalCardCarbonFlag\": true,\n  \"ethicalCardCarbonOffsetFlag\": true,\n  \"carbonCalculatorUrl\": \"https://staging.api.int.maybank.com/api/my/rt/verrency/v1/estimatekgco2\",\n  \"carbonOffsetCampaignId\": \"64a53e8f1154ea031452326c\",\n  \"maybankHeartFlag\": true,\n  \"ethicalCardPayeeCode\": \"7731\",\n  \"ethicalCardInterestFlag\": true,\n  \"ekycZolozFlag\": true,\n  \"s2uEkycRegFlag\": true,\n  \"maeJuniorFlag\": false,\n  \"maeJuniorCampaign\": false,\n  \"rpp2bAbWidget\": true,\n  \"s2uBypassCoolingFlag\": true,\n  \"wrongPwdPNFlag\": true,\n  \"googlePayConfig\": {\n    \"googlePayProvision\": true,\n    \"dashboardWidget\": {\n      \"title\": null,\n      \"description\": null,\n      \"imageUrl\": \"https://uat-maya.maybank.com.my/wallet/bankAndTelcoImages/avatar/googlepay/provision/Widget.png\",\n      \"cta\": {\n        \"title\": null,\n        \"action\": \"GOOGLEPAY_DASHBOARD\",\n        \"url\": null\n      }\n    }\n  },\n  \"multiDashboard\": {\n    \"bannerStart\": \"2023-08-15\",\n    \"bannerEnd\": \"2023-09-20\",\n    \"bannerFrequency\": 5,\n    \"multiDashboardReady\": true,\n    \"preferredDashboard\": \"A\"\n  },\n  \"s2uV2FallbackSrvcs\": null,\n  \"s2uV2PayBillFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2ReloadFlags\": {\n    \"open\": true,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2ThirdPartyFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2DuitNowProxyFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"s2uV2DuitNowIBFlags\": {\n    \"open\": false,\n    \"fav\": false,\n    \"subFav\": false\n  },\n  \"mbpnsV2Ready\": false,\n  \"enableReceiverIdValidation\": false,\n  \"multipleAccess\": {\n    \"multipleAccessReady\": 2,\n    \"maxIdLimit\": 5\n  },\n  \"dynamicApiUrl\": \"https://sit-maya.maybank.com.my\",\n  \"maeFunction\": {\n    \"tabung\": {\n      \"tabungEnabled\": true,\n      \"tabungDesc\": \"\",\n      \"tabungTitle\": \"Be Right Back!\"\n    },\n    \"dashboard\": {\n      \"casaEnabled\": true,\n      \"cardEnabled\": true,\n      \"loanEnabled\": true,\n      \"fdEnabled\": true,\n      \"wealthEnabled\": true,\n      \"casaDesc\": \"\",\n      \"cardDesc\": \"\",\n      \"loanDesc\": \"\",\n      \"fdDesc\": \"\",\n      \"wealthDesc\": \"\",\n      \"casaTitle\": \"Be Right Back!\",\n      \"cardTitle\": \"Be Right Back!\",\n      \"loanTitle\": \"Be Right Back!\",\n      \"fdTitle\": \"Be Right Back!\",\n      \"wealthTitle\": \"Be Right Back!\"\n    },\n    \"payBills\": {\n      \"payBillsEnabled\": true,\n      \"payBillsDesc\": \"\",\n      \"subPayBillsEnabled\": false,\n      \"subJomPayEnabled\": false\n    },\n    \"mobileReload\": {\n      \"mobileReloadEnabled\": true,\n      \"mobileReloadDesc\": \"\"\n    },\n    \"sendRequest\": {\n      \"sendRequestEnabled\": true,\n      \"sendRequestDesc\": \"\"\n    },\n    \"transfer\": {\n      \"transferEnabled\": true,\n      \"transferDesc\": \"\",\n      \"subBankTransferEnabled\": false\n    },\n    \"trnxHis\": {\n      \"trnxHisEnabled\": true,\n      \"trnxHisDesc\": \"\",\n      \"trnxHisTitle\": \"Be Right Back!\"\n    },\n    \"ticket\": {\n      \"wetixEnabled\": false,\n      \"erlEnabled\": true,\n      \"airpazEnabled\": true,\n      \"travelEnabled\": true,\n      \"busEnabled\": true,\n      \"wetixDesc\": \"Sorry, our Movies & Leisure services are temporarily unavailable. Please try again later.\",\n      \"erlDesc\": \"\",\n      \"airpazDesc\": \"\",\n      \"travelDesc\": \"\",\n      \"busDesc\": \"\"\n    },\n    \"ccBalanceTrn\": {\n      \"ccBalanceTrnEnabled\": false,\n      \"ccBalanceTrnDesc\": \"\"\n    },\n    \"payToCard\": {\n      \"payToCardEnabled\": true,\n      \"payToCardDesc\": \"\"\n    },\n    \"payLoan\": {\n      \"payLoanEnabled\": true,\n      \"payLoanDesc\": \"\"\n    },\n    \"scanPay\": {\n      \"scanPayEnabled\": true,\n      \"scanPayDesc\": \"\"\n    },\n    \"splitBills\": {\n      \"splitBillsEnabled\": true,\n      \"splitBillsDesc\": \"\"\n    },\n    \"maeJunior\": {\n      \"maeJuniorEnabled\": true,\n      \"maeJuniorCampaign\": true,\n      \"maeJuniorDesc\": \"\",\n      \"maeJuniorTitle\": \"Be Right Back!\"\n    },\n    \"fixedDeposit\": {\n      \"enabled\": true,\n      \"bauVersionEnabled\": true,\n      \"description\": \"\",\n      \"title\": \"Be Right Back!\"\n    },\n    \"loyalty\": {\n      \"loyaltyEnabled\": true,\n      \"loyaltyTitle\": \"\",\n      \"loyaltyDescription\": \"\"\n    },\n    \"saved\": {\n      \"savedEnabled\": false,\n      \"savedTitle\": \"Be Right Back!\",\n      \"savedDescription\": \"Our Saved services are temporarily unavailable. Rest assured, we're working to resolve this as soon as possible. Thank you for your patience and understanding.\"\n    },\n    \"maybankEzq\": {\n      \"maybankEzqEnabled\": false,\n      \"maybankEzqDesc\": \"Sorry, our Maybank EzyQ services are temporarily unavailable. Please try again later.\"\n    }\n  },\n  \"enableExpensesCache\": true,\n  \"abcEnable\": true,\n  \"abcEndpoint\": \"https://growthbook-api-dev.maybanksandbox.com\",\n  \"abcSdk\": \"sdk-cAC7AQGd1GAEedY\",\n  \"abcScope\": \"123456\",\n  \"abcTimeout\": null,\n  \"homeServiceFlag\": false,\n  \"payCardLimit\": 999999,\n  \"carTabungFlag\": true,\n  \"boldFontEnabledCheck\": true,\n  \"enableCrashReporting\": true,\n  \"clearInactiveCookiesFlag\": true,\n  \"cookieExpiryTimerInMins\": 15,\n  \"appShield\": {\n    \"appShieldReady\": true,\n    \"appShieldTimeout\": 30000,\n    \"appShieldSync\": true\n  },\n  \"disabledPNSCall\": false,\n  \"s2UActivationEnabled\": true,\n  \"forceS2uReady\": true,\n  \"dynamicURLEnable\": true\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "with param",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "custKey",
+              "value": "U2FsdGVkX18kDFNMY0IuQAiuSgyUc6ys7/lja9a5KIrBMgYvjLNvOOZ8Ik2Mop/WRWp6Oekb9NJ7clNaetpQSg==",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "458677f9-a4d3-4534-85b4-bde6b0206e5a",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "pubKey",
+      "responses": [
+        {
+          "uuid": "d7a276df-89a5-4dff-9828-6598804beb5c",
+          "body": "{\n  \"message\": \"-----BEGIN PUBLIC KEY-----MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxYmMj5iypbgMoP38vawZ/DyxoQB08ZhGJbxytAGyV2xoWBCo7Ijt8Cf3jYyNYQDT3lZJlFWjVXq4wAsdB7nEwgm3b8O0Gp0VO0S8/Y7/dkGS3yRjg0PisEhLw32IAp7T5QFst5ksIekRc2M/fpt8I4C10RpyAhCCCl/aiOLxdOwIDAQAB-----END PUBLIC KEY-----\",\n  \"code\": 0,\n  \"challenge\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "a6172a38-c0f0-4632-b105-b4a450621690",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "oauth/v1/verifyUserName",
+      "responses": [
+        {
+          "uuid": "8dc8fd9f-f1e7-429e-95fb-383df422d5a9",
+          "body": "{\n  \"code\": \"200\",\n  \"caption\": \"perftest\",\n  \"url\": \"https://www.maybank2u.com.my/maybank_gif/adapt/images/HouseHome/IAH1_CL1_PX00524.jpg\",\n  \"nonce\": \"MxC/UGYWmHn6iRZpjpeWPBgwGr5JF3WcKiQ8cHrBNfM=\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "de1a9936-d4bd-400e-923f-fbbfc7fceac7",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v2/users/login",
+      "responses": [
+        {
+          "uuid": "f422871f-64f5-42df-ab42-1b394a9363df",
+          "body": "{\n  \"message\": \"6013839****\",\n  \"code\": 0,\n  \"challenge\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "a445463a-195f-43f8-8c4c-819e882e33fc",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "wallet/v1/device/listByUsername",
+      "responses": [
+        {
+          "uuid": "e622e67e-a086-48c1-9f04-f82c3836d112",
+          "body": "{\n  \"selectedPageSize\": 0,\n  \"resultList\": [],\n  \"startPage\": 0,\n  \"endPage\": 0,\n  \"resultCount\": 0,\n  \"totalPage\": 0\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "4cb8d6bd-58f5-4c97-85f4-06148a3b5a4c",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v2/users/requestotp",
+      "responses": [
+        {
+          "uuid": "1967499e-da67-4e43-a869-05853ebbb5c8",
+          "body": "{\n  \"message\": \"successful\",\n  \"code\": 0,\n  \"challenge\": null,\n  \"result\": {\n    \"secret\": \"7I3F2XYTUSXK7S2M\",\n    \"otpValue\": \"744909\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "f1df25e4-cdf3-4e85-9246-511d521eac6f",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v2/users/validateotpRegistration",
+      "responses": [
+        {
+          "uuid": "02052a26-a7c8-4efe-b927-d6931a2b2a4c",
+          "body": "{\n  \"rsaIndicator\": \"\",\n  \"code\": \"200\",\n  \"cus_type\": \"01\",\n  \"cus_segment\": \"0\",\n  \"isUnderCoolDown\": false,\n  \"coolDownPeriod\": \"0\",\n  \"token_type\": \"bearer\",\n  \"resumeStageInd\": \"1\",\n  \"phoneNo\": \"60138393509\",\n  \"s2uRegStatus\": \"M000\",\n  \"cus_key\": \"U2FsdGVkX18kDFNMY0IuQAiuSgyUc6ys7/lja9a5KIrBMgYvjLNvOOZ8Ik2Mop/WRWp6Oekb9NJ7clNaetpQSg==\",\n  \"m2u_indicator\": \"null\",\n  \"isActivationPending\": false,\n  \"scope\": \"EDIT_BANKING EDIT_NON_BANKING READ_BANKING READ_NON_BANKING\",\n  \"cdd_ind\": \"\",\n  \"resident_country\": \"null\",\n  \"expires_in\": 31535999,\n  \"cloudToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsienV1bEdhdGV3YXkiXSwic2NvcGUiOlsiUkVBRF9OT05fQkFOS0lORyIsIkVESVRfTk9OX0JBTktJTkciXSwiZXhwIjoiU2F0IE1heSAzMSAxMToxMDoxOSBNWVQgMjAyNSIsImNsaWVudF9pZCI6Im1iYmNsb3VkIn0.FSODmgUkdg3v883S0VeTuu1ShqUjp5zNQ8bCCWqdmQq435EWmXqwyrChZmvXKQhqKntyZoT9_bWZ1soyRT4P2dlUIXm9g4rw9y_Ov9sZXyabKr0p2gnfW8cRp2iRHXeTrJY10vofUTPnoFpxVl6JhLAdX6_v5tvg0BBQAx_m_MXAXZaESIwHSyEg6mPraobkojk3l9StwWN_50V1pP9oku5rTesVRrtcAdsDHDgK_CfiWimFGzIrlgCDgx_h4amV6IbcRxp7Q8Yhmjh8QHZg0GuEPpIY9PzQa3uAXGPusYn0VDcAgYheAzAOLa2l19kPEellyHMgS3rIUEdwB9bT4Q\",\n  \"applicant_type\": \"null\",\n  \"analyticsExpiry\": \"0\",\n  \"ic_number\": \"970123146528\",\n  \"s2uRegAppId\": \"MYA\",\n  \"isS2uRegInRmbp\": false,\n  \"debitOrCreditCardFlag\": false,\n  \"isOverseasAccountLinked\": false,\n  \"digitalIdentity\": [\n    {\n      \"idType\": \"GOOGLE_ANALYTICS\",\n      \"idValue\": \"5320fdda1358822f606b85820e39c2414639b4ca5a260f2ad9dfe37e53b37806\"\n    },\n    {\n      \"idType\": \"AWS\",\n      \"idValue\": \"9b94bd94e9b1e03466fceeff32e2485a947524a783077d02dc1836acf3413940\"\n    },\n    {\n      \"idType\": \"MY_GROCER\",\n      \"idValue\": \"7de738d5a781367f9f34e921f67dd0c03e0348a666aff8fcc5d803b61fd75c97\"\n    },\n    {\n      \"idType\": \"CEP_SURVEY\",\n      \"idValue\": \"adc49fd03c7c24a8df99e30fe64246ad2178ef3ef7d504b7e6767445990978bc\"\n    }\n  ],\n  \"contact_number\": \"60138393509\",\n  \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXNfa2V5IjoiVTJGc2RHVmtYMThrREZOTVkwSXVRQWl1U2d5VWM2eXM3L2xqYTlhNUtJckJNZ1l2akxOdk9PWjhJazJNb3AvV1JXcDZPZWtiOU5KN2NsTmFldHBRU2c9PSIsImF1ZCI6WyJ6dXVsR2F0ZXdheSJdLCJ1c2VyX25hbWUiOiJwZXJmdGVzdDIwIiwiY3VzVHlwZSI6IjAxIiwic2NvcGUiOlsiRURJVF9CQU5LSU5HIiwiRURJVF9OT05fQkFOS0lORyIsIlJFQURfQkFOS0lORyIsIlJFQURfTk9OX0JBTktJTkciXSwibWF5YV9zZXNzaW9uX2lkIjoiQEBAQDIwMjQwNTMxMTEuMTQ3MzcxMDU2NUBAQEAiLCJtMnVfdXNlcl9pZCI6NjE2NjIsInBhbiI6IkE2TXM4TzlPYnRLNUF1MzFBWTNkZjVqc0JlVVFpYWZPRGV5RTg5dXhXTVpqa0Z3STN2TGdLd1ZxUnB2Rzd5MDB4MEk5Q2Q1SUZIbXpHSERJeDdSZ0VLN3J3V2Ewbk90TlVJWXNkZWtzZmxhM2VGM0VUNW84Y3BCMWFwOVhpZkJIUEdraytDNU1MbjM2djB1K2lWejVsejU0SkFNTGV6RmlpTlRJN082YlVwdz0iLCJleHAiOjE3NDg2NjEwMTksInVzZXJJZCI6MTQ1MDc5MCwianRpIjoiMWNmYWQ5Y2MtZGNhOS00ZDg2LThkZjctMmYyOTRiMDQxODJmIiwiY2xpZW50X2lkIjoiTTJVR0FURVdBWSJ9.Tc-4mNLWhWEobyMXBJEmyQuM2hTiMvJnMCdLJ8EfZs8\",\n  \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJwZXJmdGVzdDIwIiwibTJ1X3VzZXJfaWQiOjYxNjYyLCJ1c2VySWQiOjE0NTA3OTAsImNsaWVudF9pZCI6Ik0yVUdBVEVXQVkiLCJjdXNfa2V5IjoiVTJGc2RHVmtYMThrREZOTVkwSXVRQWl1U2d5VWM2eXM3L2xqYTlhNUtJckJNZ1l2akxOdk9PWjhJazJNb3AvV1JXcDZPZWtiOU5KN2NsTmFldHBRU2c9PSIsImF1ZCI6WyJ6dXVsR2F0ZXdheSJdLCJjdXNUeXBlIjoiMDEiLCJzY29wZSI6WyJFRElUX0JBTktJTkciLCJFRElUX05PTl9CQU5LSU5HIiwiUkVBRF9CQU5LSU5HIiwiUkVBRF9OT05fQkFOS0lORyJdLCJhdGkiOiIxY2ZhZDljYy1kY2E5LTRkODYtOGRmNy0yZjI5NGIwNDE4MmYiLCJtYXlhX3Nlc3Npb25faWQiOiJAQEBAMjAyNDA1MzExMS4xNDczNzEwNTY1QEBAQCIsInBhbiI6IlpLbG14N0FRQ3NmZ1JSWDRzWHJMbVQ1NitDdXl2R2pGU2UvTXRVUm5LS1ZGQkhteHJaOHlxY0tsSlRackUxVWxhMHI3NCs5VElWSHlFMDlpK3ZZNVprU01aSU1IUFNURDFhSk9tZFptMytSVXVXSjNiaDltS3JTUjV0a3Y0emZBUE5UYzA0Y0pJbHZwckRsOE5DdnlhdXBIYjlDNmwyd1I1dXNoMGJBdkxYST0iLCJleHAiOjE3NDg2NjEwMTksImp0aSI6IjJiYzlkMmRiLTE4OWEtNGNmYi04OWQ0LTAxNTJmNjg0NGY5NiJ9.fvjAA7qLtapSN4ARCMf34_aTjEN0wnNKCMtGECY1v1I\",\n  \"cus_name\": \"WANGI PUTERI\",\n  \"serverDate\": \"2024-05-31T11:10:19.472\",\n  \"user_id\": 1450790,\n  \"ekyc_status\": \"\",\n  \"mdipS2uReady\": true,\n  \"accounts\": [\n    {\n      \"CurCode\": \"MYR\",\n      \"AcctName\": \"Personal Current Account\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctTyp\": \"D\",\n      \"AcctCode\": \"03\",\n      \"NoOfCert\": \"\",\n      \"AcctNO\": \"5140130208980000000\"\n    },\n    {\n      \"CurCode\": \"MYR\",\n      \"AcctName\": \"Global Access Account-i\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctTyp\": \"D\",\n      \"AcctCode\": \"CE\",\n      \"NoOfCert\": \"\",\n      \"AcctNO\": \"9000000504250000000\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "d4de65d6-a557-4d9b-94a5-134294b30f65",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "wallet/v1/device/add",
+      "responses": [
+        {
+          "uuid": "7868a252-2e72-4585-b240-c5a414655dc2",
+          "body": "{\n  \"message\": \"success\",\n  \"code\": 0,\n  \"challenge\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "9be165b4-4d4a-41e3-9942-6bc4f17c0eb6",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "banking/v1/summary",
+      "responses": [
+        {
+          "uuid": "70d487eb-890f-4f82-b4a4-a33e00d03adb",
+          "body": "{\n  \"message\": \"success\",\n  \"code\": 0,\n  \"challenge\": null,\n  \"result\": {\n    \"total\": 101024624.96,\n    \"totalMfca\": null,\n    \"name\": \"Accounts\",\n    \"maeAvailable\": false,\n    \"jointAccAvailable\": false,\n    \"productGroupings\": null,\n    \"accountListings\": [\n      {\n        \"name\": \"Personal Current Account\",\n        \"code\": \"03\",\n        \"type\": \"D\",\n        \"group\": \"03D\",\n        \"number\": \"5140130208980000000\",\n        \"certs\": 0,\n        \"balance\": \"100,024,939.97\",\n        \"currentBalance\": \"100,024,939.97\",\n        \"oneDayFloat\": \"0.00\",\n        \"twoDayFloat\": \"0.00\",\n        \"lateClearing\": \"0.00\",\n        \"regNumber\": null,\n        \"loanType\": null,\n        \"value\": 100024939.97,\n        \"primary\": true,\n        \"supplementaryAvailable\": false,\n        \"investmentType\": null,\n        \"unitsInGrams\": null,\n        \"currencyCode\": null,\n        \"statusCode\": \"00\",\n        \"statusMessage\": \"SUCCESS\",\n        \"currencyCodes\": null,\n        \"accountType\": null,\n        \"cardType\": null,\n        \"formattedNumber\": null,\n        \"jointAccount\": false,\n        \"creditCardType\": null,\n        \"cardImage\": null,\n        \"isActive\": null\n      },\n      {\n        \"name\": \"Global Access Account-i\",\n        \"code\": \"CE\",\n        \"type\": \"D\",\n        \"group\": \"CED\",\n        \"number\": \"9000000504250000000\",\n        \"certs\": 0,\n        \"balance\": \"999,684.99\",\n        \"currentBalance\": \"999,684.99\",\n        \"oneDayFloat\": \"0.00\",\n        \"twoDayFloat\": \"0.00\",\n        \"lateClearing\": \"0.00\",\n        \"regNumber\": null,\n        \"loanType\": null,\n        \"value\": 999684.99,\n        \"primary\": false,\n        \"supplementaryAvailable\": false,\n        \"investmentType\": null,\n        \"unitsInGrams\": null,\n        \"currencyCode\": null,\n        \"statusCode\": \"00\",\n        \"statusMessage\": \"SUCCESS\",\n        \"currencyCodes\": null,\n        \"accountType\": null,\n        \"cardType\": null,\n        \"formattedNumber\": null,\n        \"jointAccount\": false,\n        \"creditCardType\": null,\n        \"cardImage\": null,\n        \"isActive\": null\n      }\n    ],\n    \"asnbConsentFlag\": null\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "A",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "checkMae",
+              "value": "true",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "6809666e-9ce1-4580-b101-23ab79e16d7e",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "475adafc-d264-4aaa-9e74-c3c7f6282845",
+          "body": "{\n  \"message\": \"success\",\n  \"code\": 0,\n  \"challenge\": null,\n  \"result\": {\n    \"total\": 100923.3,\n    \"totalMfca\": null,\n    \"name\": \"Accounts\",\n    \"maeAvailable\": false,\n    \"jointAccAvailable\": false,\n    \"productGroupings\": null,\n    \"accountListings\": [\n      {\n        \"name\": \"Savings Account-i\",\n        \"code\": \"13\",\n        \"type\": \"S\",\n        \"group\": \"13S\",\n        \"number\": \"1647170271900000000\",\n        \"certs\": 0,\n        \"balance\": \"100,923.30\",\n        \"currentBalance\": \"100,923.30\",\n        \"oneDayFloat\": \"0.00\",\n        \"twoDayFloat\": \"0.00\",\n        \"lateClearing\": \"0.00\",\n        \"regNumber\": null,\n        \"loanType\": null,\n        \"value\": 100923.3,\n        \"primary\": true,\n        \"supplementaryAvailable\": false,\n        \"investmentType\": null,\n        \"unitsInGrams\": null,\n        \"currencyCode\": null,\n        \"statusCode\": \"00\",\n        \"statusMessage\": \"SUCCESS\",\n        \"currencyCodes\": null,\n        \"accountType\": null,\n        \"cardType\": null,\n        \"formattedNumber\": null,\n        \"jointAccount\": false,\n        \"creditCardType\": null,\n        \"cardImage\": null,\n        \"isActive\": null\n      }\n    ],\n    \"asnbConsentFlag\": null\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "type",
+              "value": "A",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "c755e16c-8e39-44ae-93d7-daee8f69f1fc",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "notification/v1/pns/register",
+      "responses": [
+        {
+          "uuid": "a700ec8f-d156-4ab5-872c-319e6c4825f7",
+          "body": "[\n  {\n    \"statusCode\": \"0000\",\n    \"statusDesc\": \"success\",\n    \"data\": {\n      \"identity\": 2555431\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "2c93377e-56ec-4e2a-b54a-9576b13149cb",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v2/users/secure/updateUserProfile",
+      "responses": [
+        {
+          "uuid": "98deeac2-2c89-4892-b131-9ea875822c52",
+          "body": "{\n  \"message\": \"success\",\n  \"code\": 0,\n  \"challenge\": null,\n  \"result\": {\n    \"userId\": 1450790,\n    \"username\": \"perftest20\",\n    \"email\": null,\n    \"gender\": \"F\",\n    \"birthDate\": \"23 Jan 1997\",\n    \"phone\": \"60138393509\",\n    \"imageBase64\": null,\n    \"fullName\": \"PerfTest\",\n    \"dateTime\": \"1717125032028\",\n    \"profileUpdated\": true,\n    \"createdDate\": \"2022-11-03T13:59:32.627+0000\",\n    \"s2w\": {\n      \"displayPopup\": false,\n      \"txnType\": \"MAELOGIN\",\n      \"chance\": 1,\n      \"generic\": false,\n      \"amount\": 0,\n      \"formattedAmount\": \"0.00\"\n    },\n    \"soleProp\": false,\n    \"gcif\": \"000689489\",\n    \"profilePic\": null,\n    \"updatedDate\": \"1717125019284\",\n    \"m2uUserId\": 61662,\n    \"deviceId\": \"ab96489fec6668f8\",\n    \"dob\": \"1997-01-22T16:00:00.000+0000\",\n    \"etm\": true,\n    \"profileImagePath\": null,\n    \"onboard\": true,\n    \"qrpaySet\": false,\n    \"mae\": false,\n    \"pan\": \"160000007001596195\",\n    \"countryRate\": null,\n    \"customerKey\": null,\n    \"hardwareId\": null,\n    \"multipleAccess\": false,\n    \"lastActiveFlag\": false,\n    \"hpNo\": \"60138393509\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": true,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "2d4c972f-0cb9-414c-b9f0-b13c66c81dd2",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "campaign/v1/referral",
+      "responses": [
+        {
+          "uuid": "6643928e-106f-4125-b4ef-52d4d4333897",
+          "body": "{\n  \"inviteCode\": \"WP0123\",\n  \"id\": 1450801,\n  \"etb\": null,\n  \"ntb\": null,\n  \"message\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "d6a894cc-cdd9-4974-87dc-af9332b08efe",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "v2/users/secure/userDetails",
+      "responses": [
+        {
+          "uuid": "21268b03-9c11-45b0-9824-ef31feacd80b",
+          "body": "{\n  \"message\": \"successful\",\n  \"code\": 0,\n  \"challenge\": null,\n  \"result\": {\n    \"userId\": 1450790,\n    \"username\": \"perftest20\",\n    \"email\": null,\n    \"gender\": \"F\",\n    \"birthDate\": \"23 Jan 1997\",\n    \"phone\": \"60138393509\",\n    \"imageBase64\": null,\n    \"fullName\": \"PerfTest\",\n    \"dateTime\": \"1717125033124\",\n    \"profileUpdated\": true,\n    \"createdDate\": \"2022-11-03T13:59:32.627+0000\",\n    \"s2w\": null,\n    \"soleProp\": false,\n    \"gcif\": \"000689489\",\n    \"profilePic\": null,\n    \"updatedDate\": \"1717125019284\",\n    \"m2uUserId\": 61662,\n    \"deviceId\": \"ab96489fec6668f8\",\n    \"dob\": \"1997-01-22T16:00:00.000+0000\",\n    \"etm\": true,\n    \"profileImagePath\": null,\n    \"onboard\": true,\n    \"qrpaySet\": false,\n    \"mae\": false,\n    \"pan\": \"160000007001596195\",\n    \"countryRate\": null,\n    \"customerKey\": null,\n    \"hardwareId\": null,\n    \"multipleAccess\": false,\n    \"lastActiveFlag\": false,\n    \"hpNo\": \"60138393509\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "655f47ad-7070-4d5d-a04c-4db0f8b128a3",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "2fa/v2/secure2u/s2uActivationCardInquiry",
+      "responses": [
+        {
+          "uuid": "441f188d-6213-43b1-8e32-cb396e43f17d",
+          "body": "{\n  \"s2UActivationCardNumber\": null,\n  \"s2UActivationCardUser\": false\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "75f63702-a9ac-4d31-ad22-1997e2807360",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "2fa/v2/secure2u/checkEligibility",
+      "responses": [
+        {
+          "uuid": "71de545a-1738-458b-8b24-d1e2f9ec889a",
+          "body": "{\n  \"status\": \"M000\",\n  \"code\": \"M000\",\n  \"text\": \"Success\",\n  \"payload\": [\n    {\n      \"hardware_id\": \"37321622-1411-4BCE-B9F3-1AAEC65F837F\",\n      \"device_name\": \"iPhone_mine\",\n      \"mdip_id\": \"a0785909-6e56-4cdc-98ce-447f382fb525\",\n      \"app_id\": \"MYA\",\n      \"updateGCM\": false,\n      \"updateMultiOTP\": false,\n      \"registration_attempts\": 0,\n      \"device_status\": true,\n      \"isActivationPending\": false,\n      \"isUnderCoolDown\": false,\n      \"coolDownDue\": \"0\",\n      \"coolDownTotalHours\": \"0\",\n      \"updateOsid\": false\n    }\n  ],\n  \"s2uInfo\": {\n    \"s2u_enabled\": false,\n    \"s2u_registered\": false\n  },\n  \"rsaStatus\": null,\n  \"statusDescription\": null,\n  \"serverDate\": null,\n  \"challenge\": null,\n  \"s2w\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "9cf68a6b-4755-4454-9d75-db2f3ca149f5",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "2fa/v1/tac",
+      "responses": [
+        {
+          "uuid": "82199c90-eb0a-4ba4-b8fd-7fa5574fd96f",
+          "body": "{\n  \"statusCode\": \"0\",\n  \"statusDesc\": \"Success\",\n  \"token\": \"339822\",\n  \"smsSentStatus\": 1,\n  \"responseStatus\": \"0000\",\n  \"smsMessage\": \"RM0 M2U: Your OTP is 339822 for Secure2u Activation on SMS918B, AvishsS23Ultra on 31 May 2024 11:10:44. Did not request? Call Maybank now.\",\n  \"tacMobileUpdate\": \"\",\n  \"s2uTransactionId\": null,\n  \"tacMobileNo\": \"0138393509\",\n  \"mbbRefNo\": \"MC11111117195625808M\",\n  \"tokenSuccessful\": true\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "855aa3de-dd17-4590-9856-2097c62cbc15",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "2fa/v1/tac/validate",
+      "responses": [
+        {
+          "uuid": "cb3aab44-434f-4d2e-951e-7aae77d26a61",
+          "body": "{\n  \"statusCode\": \"0\",\n  \"statusDesc\": \"Success\",\n  \"token\": null,\n  \"smsSentStatus\": 0,\n  \"responseStatus\": \"0000\",\n  \"smsMessage\": null,\n  \"tacMobileUpdate\": \"00\",\n  \"s2uTransactionId\": \"7996137c-90a6-4b95-bbda-b172e6254be7\",\n  \"tacMobileNo\": null,\n  \"mbbRefNo\": \"MC11111117195625812M\",\n  \"tokenSuccessful\": true\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "00f39c03-366a-40ad-a064-c986e95b2fad",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "user/v2/users/validateICNo",
+      "responses": [
+        {
+          "uuid": "de6af9e1-b399-42c0-b0c1-60a9aebcaa89",
+          "body": "{\n  \"message\": \"Success\",\n  \"code\": 200,\n  \"challenge\": null,\n  \"result\": \"a436a8fe-0f2d-49d0-8bd5-b32cf1e33f97\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "5997fa0a-57ea-4f3c-b56f-415c7daae9b8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "2fa/v1/secure2u/publicKey",
+      "responses": [
+        {
+          "uuid": "4f5731f7-887a-4681-8afe-f2b08b44ba38",
+          "body": "{\n  \"publicKey\": \"xKIn6LFlsmRIdgHBEU1NoeY2L08jCbB/LXnn0SO/AwU=\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "65387c7b-1d59-46bc-9fce-20fb3ee5f091",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "2fa/v2/secure2u/register",
+      "responses": [
+        {
+          "uuid": "10376035-8889-41ea-9283-6e07b214ec98",
+          "body": "{\n  \"status\": \"M000\",\n  \"code\": \"200\",\n  \"text\": null,\n  \"payload\": [\n    {\n      \"serverPubKey\": [\n        196,\n        162,\n        39,\n        232,\n        177,\n        101,\n        178,\n        100,\n        72,\n        118,\n        1,\n        193,\n        17,\n        77,\n        77,\n        161,\n        230,\n        54,\n        47,\n        79,\n        35,\n        9,\n        176,\n        127,\n        45,\n        121,\n        231,\n        209,\n        35,\n        191,\n        3,\n        5\n      ],\n      \"encriptedSeeds\": \"AAAAAAAAAAAAAAAAAAAAAJMuWaH6aft5Uthr2sH8yTty341Bvqz0vu3tNY+FtpqOV+oaeBh3KM1p0gtZV01S6NYjJcSsWknUsrt8wD75GZpO2Dudxu3chk5SNKqHE2L5AGDRPOPi0A4X2jwVK1fhbUD58jSQLxdGDDVz6dM=\",\n      \"nonce\": \"u+3BOfxel/pY6fadwmXFg0FUWSNwZMR5\",\n      \"deviceId\": \"a82348ee-5605-4c83-8063-4e30d89f70e3\",\n      \"isUnderCoolDown\": true,\n      \"coolDownDue\": \"-30\",\n      \"coolDownPeriod\": 0,\n      \"isActivationPending\": true\n    }\n  ],\n  \"s2uInfo\": null,\n  \"rsaStatus\": null,\n  \"statusDescription\": null,\n  \"serverDate\": null,\n  \"challenge\": null,\n  \"s2w\": {\n    \"displayPopup\": false,\n    \"txnType\": \"M2US2UREG\",\n    \"chance\": 1,\n    \"generic\": false,\n    \"amount\": 0,\n    \"formattedAmount\": \"0.00\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "66c3d235-1275-412c-b52a-acfbdc54d2d4",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v2/enrollment",
+      "responses": [
+        {
+          "uuid": "aeed3f22-7b67-4dc8-9752-054353d6732d",
+          "body": "{\n  \"rsaIndicator\": \"\",\n  \"code\": \"200\",\n  \"cus_type\": \"01\",\n  \"cus_segment\": null,\n  \"isUnderCoolDown\": false,\n  \"coolDownPeriod\": \"0\",\n  \"initVersion\": 1122,\n  \"token_type\": \"bearer\",\n  \"resumeStageInd\": \"1\",\n  \"phoneNo\": \"\",\n  \"s2uRegStatus\": \"M000\",\n  \"cus_key\": \"U2FsdGVkX18kDFNMY0IuQAiuSgyUc6ys7/lja9a5KIrBMgYvjLNvOOZ8Ik2Mop/WRWp6Oekb9NJ7clNaetpQSg==\",\n  \"m2u_indicator\": \"null\",\n  \"isActivationPending\": false,\n  \"scope\": \"EDIT_NON_BANKING READ_NON_BANKING\",\n  \"cdd_ind\": \"\",\n  \"resident_country\": \"null\",\n  \"expires_in\": 31535999,\n  \"applicant_type\": \"null\",\n  \"analyticsExpiry\": \"0\",\n  \"ic_number\": \"970123146528\",\n  \"s2uRegAppId\": \"MYA\",\n  \"isS2uRegInRmbp\": false,\n  \"debitOrCreditCardFlag\": false,\n  \"isOverseasAccountLinked\": false,\n  \"contact_number\": \"\",\n  \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXNfa2V5IjoiVTJGc2RHVmtYMThrREZOTVkwSXVRQWl1U2d5VWM2eXM3L2xqYTlhNUtJckJNZ1l2akxOdk9PWjhJazJNb3AvV1JXcDZPZWtiOU5KN2NsTmFldHBRU2c9PSIsImF1ZCI6WyJ6dXVsR2F0ZXdheSJdLCJ1c2VyX25hbWUiOiJwZXJmdGVzdDIwIiwiY3VzVHlwZSI6IjAxIiwic2NvcGUiOlsiRURJVF9OT05fQkFOS0lORyIsIlJFQURfTk9OX0JBTktJTkciXSwibWF5YV9zZXNzaW9uX2lkIjoiQEBAQDIwMjQwNTMxMTEuMTI3NjE0NzcyMEBAQEAiLCJtMnVfdXNlcl9pZCI6NjE2NjIsInBhbiI6IlE1cVFqYmdIc1VIK0lpNnMzNy9pbGJ3WFB2T2JwRUlnTU1zSCtWQTlKS0pXZnV2UGo4UzBNbFBhLzF6SEwrY3p5QjVFRU85OFByM215VndRRXZIYkVYZjUxaGIrWEF4a0d0RzZuYmdKMnVnd3Y5dnpPc0x6eGZaamlyQnV6T3lITHVnZUM1dkpNRWhHR0dFWnBTb0FrVW1TNUsxS1ZEMGE1Mm5ib2J0eW1Jdz0iLCJleHAiOjE3NDg2NjM4NTgsInVzZXJJZCI6MTQ1MDc5MCwianRpIjoiNTAyNGVkNmMtZTZkMi00YmM1LWE4YTItNjBiMjRmNTRjYWVhIiwiY2xpZW50X2lkIjoiTTJVR0FURVdBWSJ9.jKjn303ZBIgH29MJn57_vhjCrcG8H7f4tIqzoKeXONc\",\n  \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJwZXJmdGVzdDIwIiwibTJ1X3VzZXJfaWQiOjYxNjYyLCJ1c2VySWQiOjE0NTA3OTAsImNsaWVudF9pZCI6Ik0yVUdBVEVXQVkiLCJjdXNfa2V5IjoiVTJGc2RHVmtYMThrREZOTVkwSXVRQWl1U2d5VWM2eXM3L2xqYTlhNUtJckJNZ1l2akxOdk9PWjhJazJNb3AvV1JXcDZPZWtiOU5KN2NsTmFldHBRU2c9PSIsImF1ZCI6WyJ6dXVsR2F0ZXdheSJdLCJjdXNUeXBlIjoiMDEiLCJzY29wZSI6WyJFRElUX05PTl9CQU5LSU5HIiwiUkVBRF9OT05fQkFOS0lORyJdLCJhdGkiOiI1MDI0ZWQ2Yy1lNmQyLTRiYzUtYThhMi02MGIyNGY1NGNhZWEiLCJtYXlhX3Nlc3Npb25faWQiOiJAQEBAMjAyNDA1MzExMS4xMjc2MTQ3NzIwQEBAQCIsInBhbiI6IlV4aHhmOWtSaVlzTWxpTDZEeEtidE1lL0dhQUNUY1UzdW1VaERid1lRYVAxSlV3Y3FyUDBGRFA0ZUVZYit3TldKTEVwUWp0eWdTTG9pQmJWY0ptZ0Z4N01sNFQ2U1V6WHhlRTMzelhUdDdEVWVha0Jmd1RwK2JEY3F6ZFUrYUNEN0JpeFVVQVJDaTFDR1poTGdlQ3lTZnJxWVAvNStmKzJKQ1JRK3pWQUt1Zz0iLCJleHAiOjE3NDg2NjM4NTgsImp0aSI6ImNmMjU1YWM3LTM1ZjMtNGJmYi1iYzFlLWZmMTY0MGRlMmEyMiJ9.w4vnMuMGKr_Bco5OiJ2_OysQ6ksj764UIkusnA9yYdw\",\n  \"cus_name\": null,\n  \"serverDate\": \"2024-05-31T11:57:39.119\",\n  \"user_id\": 1450790,\n  \"initCacheRequired\": false,\n  \"ekyc_status\": \"\",\n  \"mdipS2uReady\": true,\n  \"accounts\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "09909152-de0a-4aee-afb1-9d683102184f",
+          "body": "{\n  \"rsaIndicator\": \"\",\n  \"code\": \"200\",\n  \"cus_type\": \"01\",\n  \"cus_segment\": \"2\",\n  \"isUnderCoolDown\": false,\n  \"coolDownPeriod\": \"0\",\n  \"initVersion\": 1153,\n  \"token_type\": \"bearer\",\n  \"resumeStageInd\": \"1\",\n  \"phoneNo\": \"60127622394\",\n  \"s2uRegStatus\": \"M000\",\n  \"cus_key\": \"U2FsdGVkX19Qn+fDi0W6ozsSxVrTm9g4wzN0mubPHCbaMXJNF6qpznISw+Iy15Bh1BCHC3NLGSL8fqCByGMaEg==\",\n  \"m2u_indicator\": \"null\",\n  \"isActivationPending\": false,\n  \"scope\": \"EDIT_BANKING EDIT_NON_BANKING READ_BANKING READ_NON_BANKING\",\n  \"cdd_ind\": \"\",\n  \"resident_country\": \"null\",\n  \"expires_in\": 31535999,\n  \"applicant_type\": \"null\",\n  \"analyticsExpiry\": \"0\",\n  \"ic_number\": \"890603135104\",\n  \"s2uRegAppId\": \"MYA\",\n  \"isS2uRegInRmbp\": false,\n  \"debitOrCreditCardFlag\": false,\n  \"isOverseasAccountLinked\": false,\n  \"contact_number\": \"60127622394\",\n  \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXNfa2V5IjoiVTJGc2RHVmtYMTlRbitmRGkwVzZvenNTeFZyVG05ZzR3ek4wbXViUEhDYmFNWEpORjZxcHpuSVN3K0l5MTVCaDFCQ0hDM05MR1NMOGZxQ0J5R01hRWc9PSIsImF1ZCI6WyJ6dXVsR2F0ZXdheSJdLCJ1c2VyX25hbWUiOiJhdXRvZmFkaDA0IiwiY3VzVHlwZSI6IjAxIiwic2NvcGUiOlsiRURJVF9CQU5LSU5HIiwiRURJVF9OT05fQkFOS0lORyIsIlJFQURfQkFOS0lORyIsIlJFQURfTk9OX0JBTktJTkciXSwibWF5YV9zZXNzaW9uX2lkIjoiQEBAQDIwMjQwNjA2MTQuMTIwODA4NDgyOUBAQEAiLCJtMnVfdXNlcl9pZCI6OTExNzgsInBhbiI6IklaeGJwd3k1WS9ZWXpsME1RbzNsR3g2OVdLZHFoUE1jeCtSQkNMK3JXQWJISC85aUNrNjN1V3lrNWl4aXY5bGI2VEZPM2Z3OXRuRjVTcFJuSEtFSDUyUHBtL2Y4WWhkYUR4QU1VNEVFcUVmQ0ErTGxiS1RGQjE1TW1vWWVyTWF1NW1RaFVXVjFSaktQTDVpUlJLZ2xYbVB0dmJTNUJLcFRMNUxhcVFLZUhxYz0iLCJleHAiOjE3NDkxODk2MTYsInVzZXJJZCI6MjU1OTUyOCwianRpIjoiZTNmNGFkNjgtYmFkYS00OWJmLTkzNWItNjk1ODRlZGFjZDllIiwiY2xpZW50X2lkIjoiTTJVR0FURVdBWSJ9.9ZY_jSKOnq6jqYFRl6MSFaZIgKUbrl921TdH7xoPn_U\",\n  \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhdXRvZmFkaDA0IiwibTJ1X3VzZXJfaWQiOjkxMTc4LCJ1c2VySWQiOjI1NTk1MjgsImNsaWVudF9pZCI6Ik0yVUdBVEVXQVkiLCJjdXNfa2V5IjoiVTJGc2RHVmtYMTlRbitmRGkwVzZvenNTeFZyVG05ZzR3ek4wbXViUEhDYmFNWEpORjZxcHpuSVN3K0l5MTVCaDFCQ0hDM05MR1NMOGZxQ0J5R01hRWc9PSIsImF1ZCI6WyJ6dXVsR2F0ZXdheSJdLCJjdXNUeXBlIjoiMDEiLCJzY29wZSI6WyJFRElUX0JBTktJTkciLCJFRElUX05PTl9CQU5LSU5HIiwiUkVBRF9CQU5LSU5HIiwiUkVBRF9OT05fQkFOS0lORyJdLCJhdGkiOiJlM2Y0YWQ2OC1iYWRhLTQ5YmYtOTM1Yi02OTU4NGVkYWNkOWUiLCJtYXlhX3Nlc3Npb25faWQiOiJAQEBAMjAyNDA2MDYxNC4xMjA4MDg0ODI5QEBAQCIsInBhbiI6Iks3YlpsQ3dPT1h4Vk5WWEZ6WTdJeVFtNWVKNFNJdCtUenpnV3ZzNFhuQ1BNeVRuQklSdEZsYm5kNk9PSmphRVhrMytmaWRKM2duQ2ViWUYxdzVHSVFMemhRbW9oYjM5Q2diZjNITmtkOUhzZmdFVGx2aVBzWCtPTTFSTkJVVXY1VDlRQWVwaVZiN0F3NnpNb3YvanZ6U1BqbCtpQkFWV2RUSXBkN2xtNzQ0az0iLCJleHAiOjE3NDkxODk2MTYsImp0aSI6Ijc4YzExZjgxLWNmYjItNGJjYi05YjQ3LTEyNzI2ODI1ZWI0OCJ9.306HF9Cr82dxCuYPeJ02OwqmgMRXgoFLAcKSYvVvhrE\",\n  \"cus_name\": \"Fadh Auto D\",\n  \"serverDate\": \"2024-06-06T14:00:16.956\",\n  \"user_id\": 2559528,\n  \"initCacheRequired\": false,\n  \"ekyc_status\": \"\",\n  \"mdipS2uReady\": true,\n  \"accounts\": [\n    {\n      \"CurCode\": \"MYR\",\n      \"AcctName\": \"Savings Account-i\",\n      \"AcctStatus\": \"\",\n      \"AcctStatusDesc\": \"\",\n      \"AcctTyp\": \"S\",\n      \"AcctCode\": \"13\",\n      \"NoOfCert\": \"\",\n      \"AcctNO\": \"1647170271900000000\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "tokenType Login",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "tokenType",
+              "value": "LOGIN",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "28b64250-2024-4672-8e26-47ac206ad2f8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "stepUp/L3",
+      "responses": [
+        {
+          "uuid": "a7680a2c-ea5a-4bb7-964a-a4cde7401717",
+          "body": "{\n  \"message\": \"L3\",\n  \"code\": 0,\n  \"challenge\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "4f888d8c-cee6-4d7e-8501-1dab79d873c3",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "banking/v1/accounts/all",
+      "responses": [
+        {
+          "uuid": "796c643a-df64-4568-a468-011c0ec45153",
+          "body": "[\n  {\n    \"name\": \"Savings Account-i\",\n    \"code\": \"13\",\n    \"type\": \"S\",\n    \"group\": \"13S\",\n    \"number\": \"1647170271900000000\",\n    \"certs\": 0,\n    \"balance\": \"100,923.30\",\n    \"currentBalance\": null,\n    \"oneDayFloat\": null,\n    \"twoDayFloat\": null,\n    \"lateClearing\": null,\n    \"regNumber\": null,\n    \"loanType\": null,\n    \"value\": 100923.3,\n    \"primary\": false,\n    \"supplementaryAvailable\": false,\n    \"investmentType\": null,\n    \"unitsInGrams\": null,\n    \"currencyCode\": null,\n    \"statusCode\": \"00\",\n    \"statusMessage\": \"SUCCESS\",\n    \"currencyCodes\": null,\n    \"accountType\": \"casa\",\n    \"cardType\": null,\n    \"formattedNumber\": \"1647 1702 7190 0000 000\",\n    \"jointAccount\": false,\n    \"creditCardType\": null,\n    \"cardImage\": null,\n    \"isActive\": null\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "d9060dd0-ec17-4c68-82e0-1079e57d6071",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "2fa/v2/secure2u/validate",
+      "responses": [
+        {
+          "uuid": "1caf4818-16fc-4d8e-85a8-bd7a71535979",
+          "body": "{\n  \"status\": \"M000\",\n  \"code\": null,\n  \"text\": \"Success\",\n  \"payload\": [\n    {\n      \"hardware_id\": \"ab96489fec6668f8\",\n      \"device_name\": \"AvishsS23Ultra\",\n      \"mdip_id\": \"41d50186-e04f-477d-ac11-4d94118396c8\",\n      \"app_id\": \"MYA\",\n      \"updateGCM\": false,\n      \"updateMultiOTP\": false,\n      \"registration_attempts\": 1,\n      \"device_status\": true,\n      \"isActivationPending\": false,\n      \"isUnderCoolDown\": false,\n      \"coolDownDue\": \"1717649297\",\n      \"coolDownTotalHours\": \"0\",\n      \"updateOsid\": false\n    }\n  ],\n  \"s2uInfo\": {\n    \"pull\": \"Y\",\n    \"s2uFavTxnFlag\": \"N\",\n    \"s2uFavTxnLimit\": \"10000\",\n    \"s2u_enabled\": true,\n    \"action_flow\": \"NA\",\n    \"s2u_registered\": true\n  },\n  \"rsaStatus\": null,\n  \"statusDescription\": \"Success\",\n  \"serverDate\": null,\n  \"challenge\": null,\n  \"s2w\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "6048ba56-11dd-4102-9354-d8c161c11121",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "mae/calendar/v1/configurations",
+      "responses": [
+        {
+          "uuid": "dbc0f41a-cdd8-4578-af4b-f896699d3d22",
+          "body": "{\n  \"responseCode\": \"302 FOUND\",\n  \"message\": \"Successfully fetched calendar info for given moduleKey : DUITNOW_RECURRING_START\",\n  \"maeCalendarInfo\": {\n    \"vertical\": \"Maybank2u - Transfer\",\n    \"feature\": \"All transfer - recurring start date\",\n    \"moduleKey\": \"DUITNOW_RECURRING_START\",\n    \"defaultCountParam\": \"days\",\n    \"defaultValue\": 1,\n    \"minCountParam\": \"days\",\n    \"minValue\": 1,\n    \"maxCountParam\": \"days\",\n    \"maxValue\": 30\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "duitnow start",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "moduleKey",
+              "value": "DUITNOW_RECURRING_START",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "f6c4e3b7-0fa1-4035-aa43-a8a925a13824",
+          "body": "{\n  \"responseCode\": \"302 FOUND\",\n  \"message\": \"Successfully fetched calendar info from cache for moduleKey : TRANSFER_ONE_OFF\",\n  \"maeCalendarInfo\": {\n    \"vertical\": \"Maybank2u - Transfer\",\n    \"feature\": \"All transfer - one-off Date\",\n    \"moduleKey\": \"TRANSFER_ONE_OFF\",\n    \"defaultCountParam\": \"days\",\n    \"defaultValue\": 0,\n    \"minCountParam\": \"days\",\n    \"minValue\": 0,\n    \"maxCountParam\": \"days\",\n    \"maxValue\": 28\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Transfer-one-of",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "moduleKey",
+              "value": "TRANSFER_ONE_OFF",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "a7137fe1-9595-4372-983e-84fcfe02b1bf",
+          "body": "{\n  \"responseCode\": \"302 FOUND\",\n  \"message\": \"Successfully fetched calendar info from cache for moduleKey : DUITNOW_RECURRING_END\",\n  \"maeCalendarInfo\": {\n    \"vertical\": \"Maybank2u - Transfer\",\n    \"feature\": \"All transfer - recurring end date\",\n    \"moduleKey\": \"DUITNOW_RECURRING_END\",\n    \"defaultCountParam\": \"days\",\n    \"defaultValue\": 30,\n    \"minCountParam\": \"days\",\n    \"minValue\": 30,\n    \"maxCountParam\": \"years\",\n    \"maxValue\": 10\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "duitnow-end",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "moduleKey",
+              "value": "DUITNOW_RECURRING_END",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "77404fef-acb3-4004-8e49-56d8bb6ba791",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "transfer/v2/fundTransfer/monetary",
+      "responses": [
+        {
+          "uuid": "2de2ad4c-7b2e-4f23-9a8f-0e43c786a6e0",
+          "body": "{\n  \"transactionRefNumber\": \"MC11111117195948221M\",\n  \"serverDate\": \"06 Jun 2024, 02:01 PM\",\n  \"pollingToken\": null,\n  \"pollingStart\": null,\n  \"pollingStatus\": null,\n  \"onHold\": false,\n  \"rsaStatus\": null,\n  \"challenge\": null,\n  \"formattedTransactionRefNumber\": \"195948221M\",\n  \"statusCode\": \"0\",\n  \"statusDescription\": \"Successful\",\n  \"additionalStatusDescription\": null,\n  \"additionalStatus\": \"000\",\n  \"fromAccountBalance\": \"9.2329\",\n  \"toAccountBalance\": \"10,092,329.00\",\n  \"recipientAccountBalance\": null,\n  \"sendRcvId\": null,\n  \"s2w\": null,\n  \"merchantAppId\": null,\n  \"merchantUrl\": null,\n  \"bakongReferenceNo\": null,\n  \"bakongPaymentDetails\": null,\n  \"remittanceReferenceNo\": null,\n  \"remittancePaymentDetails\": null,\n  \"externalRefNo\": null,\n  \"tempTransactionId\": null,\n  \"transactionDigest\": null,\n  \"paymentRefNo\": null,\n  \"m2uAccountBalance\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "0d696df0-98a8-416b-98d1-926688e244b1",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "banking/v1/details/casa",
+      "responses": [
+        {
+          "uuid": "0dbaf5e9-78f0-44e0-ac0d-27261a046772",
+          "body": "{\n  \"number\": \"{{queryParam 'acctNo'}}\",\n  \"name\": \"Savings Account-i\",\n  \"balance\": \"100,923.30\",\n  \"primary\": true,\n  \"casaDetail\": {\n    \"acctNo\": \"{{queryParam 'acctNo'}}\",\n    \"acctCode\": \"{{queryParam 'acctCode'}}\",\n    \"acctType\": \"S\",\n    \"acctName\": \"Savings Account-i\",\n    \"acctBalance\": \"100,923.30\",\n    \"currentBalance\": \"100,923.30\",\n    \"oneDayFloat\": \"0.00\",\n    \"twoDayFloat\": \"0.00\",\n    \"lateClearing\": \"0.00\",\n    \"primary\": true,\n    \"acctStatusCode\": \"00\",\n    \"acctStatusValue\": \"SUCCESS\",\n    \"rawBalance\": 100923.3\n  },\n  \"cardsDetail\": null,\n  \"maeCustomerInfo\": null\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "c8bf18d8-eecc-4632-b0c3-43b773aebf0e",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "2fa/v3/transaction/init",
+      "responses": [
+        {
+          "uuid": "95d22fea-88f4-42e1-97a9-cfc34805a36c",
+          "body": "{\n  \"hexIV\": \"732ef22b231b04aac1023af7\",\n  \"tag\": \"66eb8c2b492cef80aa06fe133f821785\",\n  \"ciphertext\": \"rM2lvca1nS6+e7NcbPc76JhOp+cHrLb/iH8Vx8BoUpWBXQgHFwWyprJvwC+PZbhfZ1GikKr3UxA1UUZ0Y7DleVApBNjI+MDH4vm8P3mCpfP/VOugidxiAVGfdA5fV6xLJPUAttOy7ma4/EHxmGcjqRZ8Y4eoz69MMz2nFZ5XMy1KBSpy2PHK9pUHsgvMq995cuc+h5pY+/NTgI9Nk6b+jT1+UOglUod012sbGa5TxplRpmxiJO6PUp6by1W4s8xeGpCF2be8DdloXDLigbrm/jdIKh5bneI2dPPjuy4iJ3vMpv5hZ76I9a1RId0MnRkxy3emD8ssxUUH7H+QkxwjkDXRYHKWtzVvVUmoHpz/cYsB4nJOHGufVH5ROD0u9Pet+ipE0ZEfhaP/JtDp0vR10qnfRfLlzAQreHXOSuj8rSYg9AMyHc+AX92xPxYKQKa0Y9j1YTv7hY4ZSg0eVNqz8r1xcBcbvpwBPutmlglleGjIU6NxYmgqwLAGVD5Us/RvhKvH4vEjcfjENrjjTUKZGEZ2CZUV1v7xdxv49bhyV8sJYX9Nrf1/gHPSERcywui2zjzLVksFqNcTbZBdY7a0iHGIt/U2ambCkZEz7kWqX5o7Vq4Vpo1jeBQYiWWARRpXAID66I93vgvz2q4q7uckbI1IhWonVDQlKdw9Z6hzY83eEdz/moW8MQDjDSC+GTT7tUJ2TEcDiRY0kB0WqZ0pO+i1l2JvZF3dEej1aFQ0sOKeRYM38+qHkXZQ+QJSSJqUFdupX92SKI8443dcA5+qXmwEjOp0V2BZnLRP6y5cZk+Vq8CM9P+yP+VWbXzO9shOjlv1vJTreVIqyN+sYRmpKSgwxxBR4excaPld9KSPKMW/1u2vQsypRGYkSthz3aCbRsPVn7vRmKMYj6/OWniFmXvFzdNW1GIqjTyJYFzikx86XIGD99EtY3kTW4douByOAtvKqkSNAF/P90c0baaqUg6kA7vY8VP0+egyK2RHnr87RaIA/ncp1nYtazElh38Kmxhgz/AdStj+LR6bRE4pSEUHLgHDNcbp5qOmNkigG4sgzMDcXDrvuncnuwEd09FBgU1OTnRFtAdgDZEnR+sDNjDggcIBAPPyV9ase/f5J+LQ2rHDitAHDiu19cAg78F2+bZJ5LBJDEuaslynPtFgXwZ2z0Xn2W2+peZRI6lIf82w13Cl7lUdZSFgBfg0ehNbpOxERmnTJFLNFFgzitFuCGiC7JCiUaLeTujnIS1i/wIYigFdRvL+fHLkTf42olxVqaAWUacZnWGERn2TuguV6drxsii6uzF6LR0PwBxmZtuVwVC7wEzEw2UlSGfuk46HroawiTwT07VB9wrvXXBra65kmZZqSrY146LUq7WsPsRSqN+5ZtnNLbEmN8R06Y/xaFk05PSZs9kQfVELGYP6Z0jWwYsrQ5URhdE8wy49/RLP3ROJWXTfiO2417TGeA6UGKtyqaa+mDNhZF6rHfN9Cjpn4zIn0lgLQzpK98RByS/zAs+Eumu6VNdQQE31n8fl+7fwN3gNXciZvZBCh1NUMO72Ok/Cl86u85ShE05Tec1suo8v2JRtt1t3CO40DKUW6+l/3+QS5u+Zqr1835S9fcKa0UNKrwe9P9iT9gUEBNs8pUXfd23GauZH5Z+3Zhby6VzYvL3u8/f0BYUSvuN/FSpBpGA5JQ6oqi6UpjRabeg+frpv4T5C4sSOUrW171MTCvMUy0gXdE1CB7j2uzD9ErNbJVGqyp/dWirpK5ksMYw1BiJTkpCnpvmCgL4f3vkMxhhdkGp0heHcccR3bh1pEvm3jX/cbG+/EirPoiw4YwQdWsKQA+e8gqEuaL7CClpPKey9IkpeV7ccVQZs8AbG6tYre+PBT3POmWWg/xeezEO9WuNHNiNSQuVysrEqGxLDMLTFOKW76IZIxV2UvTzIeGBYleU9hG8ubZhwyxipF0quicDiIUL8hk94cKq2AXSIiNObmW9EF0MKDmVHtXTSnO/C3fvlYa/6MPDW0TBi2s9LM+w3YH7i51TYNLYlrupiuQPDXB7QUcV7UjaxPbCyoYl7RJ6L9KOciQrrFe/Z14DjKeOH88z3BNhVAHv8uDrIXP4Ojgu8QoKi/+PPl+G8JQTfdigUvVoUpCSf1sESTtZ3gCme/G/FYWQ2TpTeIaAoKhWPUUvgKrNLqz4unO3TwIKQc0QKW7e60NgGoZSyx8kk65wLbnnntFtNMh3hCtAWwD2G73Wt6aUtvkb/VWKeqwIs610362oK74XHRvxJUNZRE8d+6axVQlr5VZjY1RxUrAxP1npJ6WgecZfmtYf8Lh9InbX5kYxWlOoOrmjqotdre+5zZ5LUynMtaSQMXoN60/9C9AIou2CIQMcVi9V4tbzEGs9siKDz/RIgwQ4rANwiMaRAjpQrD9UhWMRQxkOP3z3JWemXiQ0dArojkLSFPFuAqCwLvw0sJHA5LiVyi0/hqr7IKpRaqlLqCHi+WwbM5kSPQWMCocrT3LMYQfxgOIGcXaYAio4CWLGEVVqPCjKsr2sere63XlST5HY7JZsb0OESRgSWFJHUmbw=\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "43e51817-8892-43e0-af75-2eefdac2018f",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v1/mdip/initChallenge",
+      "responses": [
+        {
+          "uuid": "330680b6-7050-45bc-ac94-08c6f9b83a47",
+          "body": "{\n  \"payload\": \"AAAAAAAAAAAAAAAAAAAAALvrsX79RKQBylvbw9JG6xAWBbBwe+bGP2tuBk9Gw4ATIEiQGCPrQSlltQynrrfD/nGTyg/lNSKNt/TYH0Sl3yfawhtUsu72Z8vq9vIBfa6I6foOIY/zhO3n/xEy5nq7rOraSSqYk6wwyqncn2f6oD8pMXgn64isVMNFxPIqGPxkjyEEiBPn2Wkxp56vGh1vbbBiEZE0IhZ+iFyo85JxDAugRRAM0csx60q6UuiS23Goqwm+/7v3iTEiBFwkP1idB6kkBTOZxodS2cMLRpQnR4AL5B6FIPJT8+ZzZQ43AB56YgaC1XTl0w4MO8rIC1lgoHqrw7kawX7Z1i2pWTPqjgWFVtlkPbQ7oPaq5Nu6gyJqAAm4PTneybUjnoG37RY4R9Bv+Y0Z/lG5IvoWwxiNEoACt+geJsEgmXpRoxbiQkBsw9fOuWdJM+0IzEv/oxftinuxpKsEV6UjDeZ9LOPvo9JpodGFoN+pxiJATBYzhjQTdPNZ5toAztTURxdI31/82mBSjsL8p8RtEIGzavBWZrLFxoOOiulhv9WGUS+ddr/vLOMNnCPSmqs6sQAM4qcfVoI3XdjY3TUHQiP+rRKdTM+kw3xHp/Qzq9y11WjQTZLu0kh7aFPPYn9lr7RArZokKTRXCeTMU8xJ00RsOUXHqLXR0KireCBqq9adC3g/60iNk5Hvwum6WOKU5B9CpVUm9/ft2ry5apxJKOs1kgMMAx0Bm5g09cIZ+e5zpnmBccAOmsmtkAS5lJE1C1w0rnVRBN1iIUbYUOXRcVLVYuqS7GAK3tiKBBnXyqSo1K0323oIbtSZsOOl15m5piusnKjDoEtzHWR9rquI5vZV0YwEftcAaPb9RjECgg6t7dbWzAT9pGhQFe8Mu6liHwTyEXmZvHymzYKyGdLliJ9+Jiuw9VvO8EIkIB8l0MrXma9ttC4e/8t4eCxWiamezYkHtcO+XUCGyZW6MC4rDFzCcS3oBwGb3PQChgjmUGrZOffXo1Zp+1XR1MHf89iikfo4sx3rfcD3HvQzyPnyEo1hWqVJxK/WoEzYmQs2d8/mQgagBpLIDEnZJh4y60i629S4goSsGWNEV7BkOKWeCMnPIcvE3RX69vCDjGlAekzW0fUQtRddfFP4wvO5iEtLfqx9ln24d857hxPk5FSl3pceYKqpwyQECUGBKRuKPlo7zNa9IQU=\",\n  \"ref\": \"Zs54EDV8I1wAMHL4yOlfy5qV5PyWTw26\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "b667d1d5-31af-42a8-a42b-b09210b7629f",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "v1/mdip/verifyChallenge",
+      "responses": [
+        {
+          "uuid": "0c0923c9-34bb-45f9-98b0-362bfe665908",
+          "body": "{\n  \"payload\": \"AAAAAAAAAAAAAAAAAAAAAAcOkPWRTgTGyqf6GGxQ2VVgPhcAyGAC5JtaqO7STo+29OSWECFZjWo8C6SL6u2RlcryIiFCtcyacLrMr6UQeayQ5B1nYmcC1M3u/KuFIMou0jOHOMSypDHiDGJ64RU=\",\n  \"ref\": \"hiYj11bGKCCGR8z3zYukdKBEJWsUBk+W\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "f539ad1b-0231-4bc6-a263-d72bb5c2814f",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "2fa/v3/transaction/execute",
+      "responses": [
+        {
+          "uuid": "40de9399-c227-4693-9592-5a603747f636",
+          "body": "{\n  \"hexIV\": \"7937fa300bb26747b84d5934\",\n  \"tag\": \"553a76f679acb40ae2f42cac70f50e08\",\n  \"ciphertext\": \"p5tLg6+GgywSPGkfUUbdw1MdkvTkoRjqvSjUOMZVAqrIQEFjPqVCly7FdatSKEM3uBriPA4QLe3D6aA8Mgrtj8KLV5J4Ztt/NR3PBZIROkC2WHk9c0GjZrc3SlGSmtwDW6PCtdjgMxL0Eio6ltRI/3gG5YXz86kmyh2B0x+YTgsJZuadcT//Fs7mCORH+lnBstDWR40smDphf5rI0KdLWA//VgjrAiveqW/Y5kaFf+ykl4ta40QyQpcTVchlCSZXouDldOcM1bi00QC5iYMKn/NUUf3B1SppWS3Up5clhgzCbV2Lcz8AvqqR15xjcgScjADegMRNv0k7A99WeAfG1Mpak3vn0HEcT1W6fZ/5lrCdnsSfFpjP00N9ixRaixb9/9vmyXT4Valtbt/Hiffgrv1dudAhBrS9rafA2kN+n7WdrvSZXSJ5CkMonN4Qi/X9/ojkiBy2PXmrAGJTslgtuuj4r6gYUspEBKS9ZkvjYZatRkwuV5KsOUlmxznraJge0J4H/QOYvQqjlDNanj4/pQbFWH5KFHpfFdp7sy7iADW7LxcgihaCcUiK3BWuBOtbaUiyd+BhqbiPFG+8zmAXIS2XH+gnqOFY7VXZdqiF5yQRI65D65LV6+GhaqUEX9NS30SYUmRPiwe7UWOrDW2NMkFcK/7wQlebhbeKTihD84KjutC0j5Yf2B1bMZD6zqXKFsmOOD5/q8O9OYAoj1j8Fa/dv/fhjB87+/89klLcuphNAAyYow+LUrED8yQgiMYEiZzTxDpNOIbPPp0Q5wRx8fRaj025q2/0HR7SG1BHJdxla1glkwq4vAflqy1eV0yC4sVktntukOAQaWUuRtVVk3cM6OpxMzK/hzAWEg4jVk1T\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -267,6 +1329,126 @@
     {
       "type": "route",
       "uuid": "e5b8133e-4c63-475c-847e-4afb24227c29"
+    },
+    {
+      "type": "route",
+      "uuid": "458677f9-a4d3-4534-85b4-bde6b0206e5a"
+    },
+    {
+      "type": "route",
+      "uuid": "a6172a38-c0f0-4632-b105-b4a450621690"
+    },
+    {
+      "type": "route",
+      "uuid": "de1a9936-d4bd-400e-923f-fbbfc7fceac7"
+    },
+    {
+      "type": "route",
+      "uuid": "a445463a-195f-43f8-8c4c-819e882e33fc"
+    },
+    {
+      "type": "route",
+      "uuid": "4cb8d6bd-58f5-4c97-85f4-06148a3b5a4c"
+    },
+    {
+      "type": "route",
+      "uuid": "f1df25e4-cdf3-4e85-9246-511d521eac6f"
+    },
+    {
+      "type": "route",
+      "uuid": "d4de65d6-a557-4d9b-94a5-134294b30f65"
+    },
+    {
+      "type": "route",
+      "uuid": "9be165b4-4d4a-41e3-9942-6bc4f17c0eb6"
+    },
+    {
+      "type": "route",
+      "uuid": "c755e16c-8e39-44ae-93d7-daee8f69f1fc"
+    },
+    {
+      "type": "route",
+      "uuid": "2c93377e-56ec-4e2a-b54a-9576b13149cb"
+    },
+    {
+      "type": "route",
+      "uuid": "2d4c972f-0cb9-414c-b9f0-b13c66c81dd2"
+    },
+    {
+      "type": "route",
+      "uuid": "d6a894cc-cdd9-4974-87dc-af9332b08efe"
+    },
+    {
+      "type": "route",
+      "uuid": "655f47ad-7070-4d5d-a04c-4db0f8b128a3"
+    },
+    {
+      "type": "route",
+      "uuid": "75f63702-a9ac-4d31-ad22-1997e2807360"
+    },
+    {
+      "type": "route",
+      "uuid": "9cf68a6b-4755-4454-9d75-db2f3ca149f5"
+    },
+    {
+      "type": "route",
+      "uuid": "855aa3de-dd17-4590-9856-2097c62cbc15"
+    },
+    {
+      "type": "route",
+      "uuid": "00f39c03-366a-40ad-a064-c986e95b2fad"
+    },
+    {
+      "type": "route",
+      "uuid": "5997fa0a-57ea-4f3c-b56f-415c7daae9b8"
+    },
+    {
+      "type": "route",
+      "uuid": "65387c7b-1d59-46bc-9fce-20fb3ee5f091"
+    },
+    {
+      "type": "route",
+      "uuid": "66c3d235-1275-412c-b52a-acfbdc54d2d4"
+    },
+    {
+      "type": "route",
+      "uuid": "28b64250-2024-4672-8e26-47ac206ad2f8"
+    },
+    {
+      "type": "route",
+      "uuid": "4f888d8c-cee6-4d7e-8501-1dab79d873c3"
+    },
+    {
+      "type": "route",
+      "uuid": "d9060dd0-ec17-4c68-82e0-1079e57d6071"
+    },
+    {
+      "type": "route",
+      "uuid": "6048ba56-11dd-4102-9354-d8c161c11121"
+    },
+    {
+      "type": "route",
+      "uuid": "77404fef-acb3-4004-8e49-56d8bb6ba791"
+    },
+    {
+      "type": "route",
+      "uuid": "0d696df0-98a8-416b-98d1-926688e244b1"
+    },
+    {
+      "type": "route",
+      "uuid": "c8bf18d8-eecc-4632-b0c3-43b773aebf0e"
+    },
+    {
+      "type": "route",
+      "uuid": "43e51817-8892-43e0-af75-2eefdac2018f"
+    },
+    {
+      "type": "route",
+      "uuid": "b667d1d5-31af-42a8-a42b-b09210b7629f"
+    },
+    {
+      "type": "route",
+      "uuid": "f539ad1b-0231-4bc6-a263-d72bb5c2814f"
     }
   ],
   "proxyMode": false,
@@ -298,6 +1480,10 @@
     {
       "key": "Access-Control-Allow-Headers",
       "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    },
+    {
+      "key": "TRACE-ID",
+      "value": "{{faker 'string.uuid'}}"
     }
   ],
   "proxyReqHeaders": [
