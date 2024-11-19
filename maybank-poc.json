@@ -1216,7 +1216,7 @@
       "responses": [
         {
           "uuid": "2de2ad4c-7b2e-4f23-9a8f-0e43c786a6e0",
-          "body": "{\n  \"transactionRefNumber\": \"MC11111117195948221M\",\n  \"serverDate\": \"06 Jun 2024, 02:01 PM\",\n  \"pollingToken\": null,\n  \"pollingStart\": null,\n  \"pollingStatus\": null,\n  \"onHold\": false,\n  \"rsaStatus\": null,\n  \"challenge\": null,\n  \"formattedTransactionRefNumber\": \"195948221M\",\n  \"statusCode\": \"0\",\n  \"statusDescription\": \"Successful\",\n  \"additionalStatusDescription\": null,\n  \"additionalStatus\": \"000\",\n  \"fromAccountBalance\": \"9.2329\",\n  \"toAccountBalance\": \"10,092,329.00\",\n  \"recipientAccountBalance\": null,\n  \"sendRcvId\": null,\n  \"s2w\": null,\n  \"merchantAppId\": null,\n  \"merchantUrl\": null,\n  \"bakongReferenceNo\": null,\n  \"bakongPaymentDetails\": null,\n  \"remittanceReferenceNo\": null,\n  \"remittancePaymentDetails\": null,\n  \"externalRefNo\": null,\n  \"tempTransactionId\": null,\n  \"transactionDigest\": null,\n  \"paymentRefNo\": null,\n  \"m2uAccountBalance\": null\n}",
+          "body": "{\r\n  \"transactionRefNumber\": \"MC11111117201211891M\",\r\n  \"serverDate\": \"18 Nov 2024, 04:32 PM\",\r\n  \"pollingToken\": \"00000070013405030039409363364820\",\r\n  \"pollingStart\": true,\r\n  \"pollingStatus\": \"Expired\",\r\n  \"onHold\": false,\r\n  \"rsaStatus\": null,\r\n  \"challenge\": null,\r\n  \"formattedTransactionRefNumber\": \"201211891M\",\r\n  \"statusCode\": \"0\",\r\n  \"statusDescription\": \"Accepted\",\r\n  \"additionalStatusDescription\": \"We are in the midst of processing your transfer.\",\r\n  \"additionalStatus\": \"000\",\r\n  \"fromAccountBalance\": \"40404.0404\",\r\n  \"toAccountBalance\": \"40,404,040,404.00\",\r\n  \"recipientAccountBalance\": null,\r\n  \"sendRcvId\": null,\r\n  \"s2w\": null,\r\n  \"merchantAppId\": null,\r\n  \"merchantUrl\": null,\r\n  \"bakongReferenceNo\": null,\r\n  \"bakongPaymentDetails\": null,\r\n  \"remittanceReferenceNo\": null,\r\n  \"remittancePaymentDetails\": null,\r\n  \"externalRefNo\": null,\r\n  \"tempTransactionId\": null,\r\n  \"transactionDigest\": null,\r\n  \"paymentRefNo\": null,\r\n  \"m2uAccountBalance\": null\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1584,6 +1584,74 @@
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "21e4ef88-d298-498d-849f-374fecdfc52c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "swiftCode=BOFAMY2X&bankCode=BOFA",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "swiftCode",
+              "value": "BOFAMY2X",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "bankCode",
+              "value": "BOFA",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "a01e27be-b51c-441a-b9bc-b5471da1b7ce",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "swiftCode=CIBBMYKL&bankCode=CIMB BANK",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "swiftCode",
+              "value": "BOFAMY2X",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "bankCode",
+              "value": "BOFA",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         }
@@ -2003,6 +2071,35 @@
         }
       ],
       "responseMode": null
+    },
+    {
+      "uuid": "11c213f1-31db-42a1-b361-54528d43a2ed",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "2fa/v3/transaction/challenge/pending",
+      "responses": [
+        {
+          "uuid": "bb6a8bab-4e59-46b2-9807-bb92d0b7e3b2",
+          "body": "{\r\n  \"statusCode\": 9999,\r\n  \"statusDesc\": \"Unsuccessful\",\r\n  \"status\": \"MS3015\",\r\n  \"payload\": null\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
     }
   ],
   "rootChildren": [
@@ -2229,6 +2326,10 @@
     {
       "type": "route",
       "uuid": "408648f4-cfed-4836-8d9b-0286b1291191"
+    },
+    {
+      "type": "route",
+      "uuid": "11c213f1-31db-42a1-b361-54528d43a2ed"
     }
   ],
   "proxyMode": false,
