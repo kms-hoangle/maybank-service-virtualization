@@ -1636,14 +1636,14 @@
             {
               "target": "query",
               "modifier": "swiftCode",
-              "value": "BOFAMY2X",
+              "value": "CIBBMYKL",
               "invert": false,
               "operator": "equals"
             },
             {
               "target": "query",
               "modifier": "bankCode",
-              "value": "BOFA",
+              "value": "CIMB BANK",
               "invert": false,
               "operator": "equals"
             }
