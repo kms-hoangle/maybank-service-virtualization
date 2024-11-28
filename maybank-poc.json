@@ -1555,7 +1555,7 @@
       "responses": [
         {
           "uuid": "63d565c5-e50c-441c-9947-e7332833e780",
-          "body": "{}",
+          "body": "{\r\n  \"transactionRefNumber\": \"MC11111117201211891M\",\r\n  \"serverDate\": \"18 Nov 2024, 04:32 PM\",\r\n  \"pollingToken\": \"00000070013405030039409363364820\",\r\n  \"pollingStart\": true,\r\n  \"pollingStatus\": \"Expired\",\r\n  \"onHold\": false,\r\n  \"rsaStatus\": null,\r\n  \"challenge\": null,\r\n  \"formattedTransactionRefNumber\": \"201211891M\",\r\n  \"statusCode\": \"0\",\r\n  \"statusDescription\": \"Accepted\",\r\n  \"additionalStatusDescription\": \"We are in the midst of processing your transfer.\",\r\n  \"additionalStatus\": \"000\",\r\n  \"fromAccountBalance\": \"40404.0404\",\r\n  \"toAccountBalance\": \"40,404,040,404.00\",\r\n  \"recipientAccountBalance\": null,\r\n  \"sendRcvId\": null,\r\n  \"s2w\": null,\r\n  \"merchantAppId\": null,\r\n  \"merchantUrl\": null,\r\n  \"bakongReferenceNo\": null,\r\n  \"bakongPaymentDetails\": null,\r\n  \"remittanceReferenceNo\": null,\r\n  \"remittancePaymentDetails\": null,\r\n  \"externalRefNo\": null,\r\n  \"tempTransactionId\": null,\r\n  \"transactionDigest\": null,\r\n  \"paymentRefNo\": null,\r\n  \"m2uAccountBalance\": null\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -1583,13 +1583,13 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": true,
+          "default": false,
           "crudKey": "id",
           "callbacks": []
         },
         {
           "uuid": "21e4ef88-d298-498d-849f-374fecdfc52c",
-          "body": "{}",
+          "body": "{\r\n  \"swiftCode\": \"BOFAMY2X\",\r\n  \"downtimeNote\": \"The selected bank is experiencing intermittent issues with DuitNow Transfer. Interbank GIRO has been automatically selected.\",\r\n  \"interbankPaymentTypeList\": [\r\n    {\r\n      \"bankCode\": \"BOFA\",\r\n      \"description\": \"Funds Transfer\",\r\n      \"interbankPaymentType\": \"OTHER\",\r\n      \"paymentCode\": \"01\"\r\n    }\r\n  ],\r\n  \"interbankPaymentModeList\": [\r\n    {\r\n      \"description\": \"DuitNow Transfer\",\r\n      \"serviceFee\": \"0.00\",\r\n      \"serviceFeeText\": \"Note: RM0.00 service charge applies for DuitNow - Instant Transfer. To ensure transaction is successful, the Beneficiary Account must be valid and Payment Type is accepted by the receiving bank.\",\r\n      \"interbankPaymentMode\": \"INSTANT\",\r\n      \"note\": null\r\n    },\r\n    {\r\n      \"description\": \"GIRO\",\r\n      \"serviceFee\": \"0.00\",\r\n      \"serviceFeeText\": null,\r\n      \"interbankPaymentMode\": \"IBG\",\r\n      \"note\": \"Interbank GIRO transfers are not instant. Transactions before 5pm transfer the same day, while after 5pm or on non-business days transfer the next business day.\"\r\n    }\r\n  ],\r\n  \"details\": [\r\n    {\r\n      \"header\": \"Instant Transfer\",\r\n      \"serviceFee\": \"(Service Fee RM 0.00)\",\r\n      \"description\": [\r\n        \"For SWIFT and Quick Fund Transfer\"\r\n      ]\r\n    },\r\n    {\r\n      \"header\": \"Interbank GIRO\",\r\n      \"serviceFee\": \"(Service Fee RM 0.00)\",\r\n      \"description\": [\r\n        \"For transaction initiated on business days (Mon-Fri):\",\r\n        \"1. Before 5:00am, funds will transfer on the same day by 11:00am.\",\r\n        \"2. Between 5:00am - 8:00am, funds will transfer on the same day by 2:00pm.\",\r\n        \"3. Between 8:01am - 11:00am, funds will transfer on the same day by 5:00pm.\",\r\n        \"4. Between 11:01am - 2:00pm, funds will transfer on the same day by 8:20pm.\",\r\n        \"5. Between 2:01pm - 5:00pm, funds will transfer on the same day by 11:00pm.\",\r\n        \"For transactions after 5:00pm and on non-business days (Sat, Sun & Federal Territory Public Holidays), funds will transfer the next business day.\"\r\n      ]\r\n    },\r\n    {\r\n      \"header\": null,\r\n      \"serviceFee\": null,\r\n      \"description\": [\r\n        \"For unsuccessful IBG transactions performed on the same day by 5:00PM, the customer will receive the fund on the next business day by 11am.\"\r\n      ]\r\n    }\r\n  ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "swiftCode=BOFAMY2X&bankCode=BOFA",
@@ -1617,13 +1617,13 @@
           "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
-          "default": false,
+          "default": true,
           "crudKey": "id",
           "callbacks": []
         },
         {
           "uuid": "a01e27be-b51c-441a-b9bc-b5471da1b7ce",
-          "body": "{}",
+          "body": "{\r\n  \"swiftCode\": \"CIBBMYKL\",\r\n  \"downtimeNote\": \"The selected bank is experiencing intermittent issues with DuitNow Transfer. Interbank GIRO has been automatically selected.\",\r\n  \"interbankPaymentTypeList\": [\r\n    {\r\n      \"bankCode\": \"CIMB BANK\",\r\n      \"description\": \"Funds Transfer\",\r\n      \"interbankPaymentType\": \"TRANSFER\",\r\n      \"paymentCode\": \"01\"\r\n    },\r\n    {\r\n      \"bankCode\": \"CIMB BANK\",\r\n      \"description\": \"Credit Card Payment\",\r\n      \"interbankPaymentType\": \"CREDIT_CARD\",\r\n      \"paymentCode\": \"03\"\r\n    },\r\n    {\r\n      \"bankCode\": \"CIMB BANK\",\r\n      \"description\": \"Loan Payment\",\r\n      \"interbankPaymentType\": \"OTHER\",\r\n      \"paymentCode\": \"02\"\r\n    },\r\n    {\r\n      \"bankCode\": \"CIMB BANK\",\r\n      \"description\": \"Hire Purchase\",\r\n      \"interbankPaymentType\": \"OTHER\",\r\n      \"paymentCode\": \"06\"\r\n    }\r\n  ],\r\n  \"interbankPaymentModeList\": [\r\n    {\r\n      \"description\": \"DuitNow Transfer\",\r\n      \"serviceFee\": \"0.00\",\r\n      \"serviceFeeText\": \"Note: RM0.00 service charge applies for DuitNow - Instant Transfer. To ensure transaction is successful, the Beneficiary Account must be valid and Payment Type is accepted by the receiving bank.\",\r\n      \"interbankPaymentMode\": \"INSTANT\",\r\n      \"note\": null\r\n    },\r\n    {\r\n      \"description\": \"GIRO\",\r\n      \"serviceFee\": \"0.00\",\r\n      \"serviceFeeText\": null,\r\n      \"interbankPaymentMode\": \"IBG\",\r\n      \"note\": \"Interbank GIRO transfers are not instant. Transactions before 5pm transfer the same day, while after 5pm or on non-business days transfer the next business day.\"\r\n    }\r\n  ],\r\n  \"details\": [\r\n    {\r\n      \"header\": \"Instant Transfer\",\r\n      \"serviceFee\": \"(Service Fee RM 0.00)\",\r\n      \"description\": [\r\n        \"For SWIFT and Quick Fund Transfer\"\r\n      ]\r\n    },\r\n    {\r\n      \"header\": \"Interbank GIRO\",\r\n      \"serviceFee\": \"(Service Fee RM 0.00)\",\r\n      \"description\": [\r\n        \"For transaction initiated on business days (Mon-Fri):\",\r\n        \"1. Before 5:00am, funds will transfer on the same day by 11:00am.\",\r\n        \"2. Between 5:00am - 8:00am, funds will transfer on the same day by 2:00pm.\",\r\n        \"3. Between 8:01am - 11:00am, funds will transfer on the same day by 5:00pm.\",\r\n        \"4. Between 11:01am - 2:00pm, funds will transfer on the same day by 8:20pm.\",\r\n        \"5. Between 2:01pm - 5:00pm, funds will transfer on the same day by 11:00pm.\",\r\n        \"For transactions after 5:00pm and on non-business days (Sat, Sun & Federal Territory Public Holidays), funds will transfer the next business day.\"\r\n      ]\r\n    },\r\n    {\r\n      \"header\": null,\r\n      \"serviceFee\": null,\r\n      \"description\": [\r\n        \"For unsuccessful IBG transactions performed on the same day by 5:00PM, the customer will receive the fund on the next business day by 11am.\"\r\n      ]\r\n    }\r\n  ]\r\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "swiftCode=CIBBMYKL&bankCode=CIMB BANK",
