@@ -1105,6 +1105,33 @@
           "filePath": "",
           "databucketID": "",
           "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "function_code",
+              "value": "FN00004",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "fe83d2b5-ef86-4540-ba8d-7c5931d4cd7d",
+          "body": "{\r\n  \"status\": \"M000\",\r\n  \"code\": null,\r\n  \"text\": \"Success\",\r\n  \"payload\": [\r\n    {\r\n      \"hardware_id\": \"835f1ce5be828de3\",\r\n      \"device_name\": \"OnePlus7TPro\",\r\n      \"mdip_id\": \"585a6357-c01a-4042-a06c-12e9d959e65b\",\r\n      \"app_id\": \"MYA\",\r\n      \"updateGCM\": false,\r\n      \"updateMultiOTP\": false,\r\n      \"registration_attempts\": 1,\r\n      \"device_status\": true,\r\n      \"isActivationPending\": false,\r\n      \"isUnderCoolDown\": false,\r\n      \"coolDownDue\": \"1731401472\",\r\n      \"coolDownTotalHours\": \"2114\",\r\n      \"updateOsid\": false\r\n    }\r\n  ],\r\n  \"s2uInfo\": {\r\n    \"pull\": \"Y\",\r\n    \"s2uFavTxnFlag\": \"N\",\r\n    \"s2uFavTxnLimit\": \"10000\",\r\n    \"s2u_enabled\": true,\r\n    \"action_flow\": \"S2U\",\r\n    \"s2u_registered\": true\r\n  },\r\n  \"rsaStatus\": null,\r\n  \"statusDescription\": \"Success\",\r\n  \"serverDate\": null,\r\n  \"challenge\": null,\r\n  \"s2w\": null\r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "S2U",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
           "rules": [],
           "rulesOperator": "OR",
           "disableTemplating": false,
